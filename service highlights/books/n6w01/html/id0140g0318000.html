@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:java="smconverter.ConverterUtilities">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE MEDIA="screen, projection" TYPE="text/css">@import url(../../../../../../../../Styles/wsm.css);</STYLE>
+<META name="doc.taxonomy" content="SH||Engine||Control System">
+<META name="doc.language" content="en-US">
+<META name="doc.model-year" content="MAZDA6::2014||">
+<META name="doc.category" content="Engine">
+<title>HYDRAULIC VARIABLE VALVE TIMING CONTROL [SKYACTIV-G 2.5]</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center">
+<IFRAME scrolling="no" frameborder="0" height="0px" width="100%" marginwidth="0" src="http://am.mazdaserviceinfo.com/service/esi/emazda/esiContent.jsp" id="headerIFrame" name="headerIFrame"></IFRAME>
+</td>
+</tr>
+</table>
+<br>
+				<a href="id0140g0188400.html">< Previous</a>
+			&nbsp;
+				<a href="id0140g0318100.html">Next ></a>
+			<br>
+<h2>2014 -                                     
+	                	Mazda6 -                    
+	                	Engine</h2>
+<a name="id0140g0318000"></a> 
+<h3>HYDRAULIC VARIABLE VALVE TIMING CONTROL [SKYACTIV-G 2.5]</h3>  
+<a name="id0140g031800001"></a> 
+<h4>Outline</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Changes the exhaust valve timing according to engine operation conditions to improve engine output, fuel economy, and emission performance.</p> </li> 
+<li> <p>Based on each input signal, the PCM determines the optimum exhaust valve timing according to the engine operation conditions. The PCM drives the OCV, and switches the oil passages of the hydraulic variable valve timing actuator to control the exhaust valve timing at optimum.</p> </li> 
+<li> <p>Based on the coordination with the electric variable valve timing control and by increasing the amount of overlap during high engine loads, nitrogen oxide (NOx) occurring largely at high temperatures is reduced by re-circulating exhaust gas into the combustion chamber, which also reduces combustion temperature.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0140g031800002"></a> 
+<h4>Block Diagram</h4>  
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6xun00001369.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6xun00001369.gif"></a>
+</p>   
+<a name="id0140g031800003"></a> 
+<h4>Operation</h4> 
+<a name="id0140g031800004"></a> 
+<h5>Exhaust valve timing determination</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The PCM controls current to the OCV to obtain optimum exhaust valve timing according to the engine operation conditions (target exhaust valve timing).</p> </li> 
+<li> <p>In addition to controlling the OCV drive current value to obtain the target exhaust valve timing, the PCM compares the value with the actual exhaust valve timing to correct the OCV drive current value if necessary.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Target exhaust valve timing</b> 
+<li> <p>The target exhaust valve timing is determined by the engine speed and the charging efficiency.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Actual exhaust valve timing</b> 
+<li> <p>The actual exhaust valve timing is calculated by subtracting the cam maximum advance learning value from the value (retard amount) detected by the exhaust camshaft position sensor and crankshaft position sensor.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Cam maximum advance learning value</b> 
+<li> <p>Though the exhaust camshaft valve timing (including maximum advance position) is detected based on the difference in the rise between the exhaust camshaft position sensor and the crankshaft position sensor signals, variation in signals from the assembly of each sensor occurs.</p> </li> 
+<li> <p>The PCM stores the difference in the rise of the exhaust camshaft position sensor and crankshaft position signals to prevent detection of variations in the exhaust valve timing.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0140g031800005"></a> 
+<h5>OCV drive current determination</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The PCM divides the oil control valve OCV drive range into three modes according to engine operation conditions. The OCV drive current is determined based on the target current calculated in each mode.</p> </li> 
+</ul>
+</blockquote> 
+<b>Range mode table</b>
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">   
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Mode name</p> </td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control description</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Feedback mode</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The feedback mode constantly monitors whether the target exhaust valve timing is the determined value according to the engine operation conditions and controls the OCV drive current based on the results.</p> </li> 
+<blockquote>
+<ul type="square"> 
+<b>Mode execution condition</b> 
+<li> <p>Except cleaning mode, cam maximum retard mode</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Cleaning mode</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Cleaning mode is to remove foreign material in the OCV oil passages.</p> </li> 
+<blockquote>
+<ul type="square"> 
+<b>Mode execution condition</b> 
+<li> <p>During deceleration fuel cut</p> </li> 
+<li> <p>Engine speed: 2,250―3,500 rpm</p> </li> 
+<li> <p>Engine coolant temperature: 80&deg;C {176&deg;F} or more</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Cam advance mode</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If the cam advance is appropriate according to engine operation conditions such as while in torque down execution during idling, the cam advance mode advances the exhaust valve timing and stabilizes the engine speed.</p> </li> 
+<blockquote>
+<ul type="disc"> 
+<b>Mode execution condition</b> 
+<li> <p>When any of the following conditions is met:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>During engine cranking</p> </li> 
+<li> <p>Idling</p> </li> 
+<li> <p>Engine speed: Less than 800 rpm</p> </li> 
+<li> <p>Engine coolant temperature: Less than 60 &deg;C {140&deg;F} </p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr>  
+</tbody>
+</table>
+<br>   
+<br>
+<br>
+				<a href="id0140g0188400.html">< Previous</a>
+			&nbsp;
+				<a href="id0140g0318100.html">Next ></a>
+			<br>
+<div align="right">
+<a href="#">Back to Top</a>
+<br>
+</div>
+<div align="center">
+<em>&copy; 2012 Mazda North American Operations, U.S.A.</em>
+</div>
+</body>
+</html>

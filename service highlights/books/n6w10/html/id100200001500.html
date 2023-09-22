@@ -1,0 +1,570 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:java="smconverter.ConverterUtilities">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE MEDIA="screen, projection" TYPE="text/css">@import url(../../../../../../../../Styles/wsm.css);</STYLE>
+<META name="doc.taxonomy" content="SH||Multiplex Communication System||On-Board Diagnostics">
+<META name="doc.language" content="en-US">
+<META name="doc.model-year" content="MAZDA6::2014||">
+<META name="doc.category" content="Multiplex Communication System">
+<title>ON-BOARD DIAGNOSTIC</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center">
+<IFRAME scrolling="no" frameborder="0" height="0px" width="100%" marginwidth="0" src="http://am.mazdaserviceinfo.com/service/esi/emazda/esiContent.jsp" id="headerIFrame" name="headerIFrame"></IFRAME>
+</td>
+</tr>
+</table>
+<br>
+				<a href="id100000001400.html">< Previous</a>
+			&nbsp;
+				<a href="id104000001300.html">Next ></a>
+			<br>
+<h2>2014 -                                     
+	                	Mazda6 -                    
+	                	Multiplex Communication System</h2>
+<a name="id100200001500"></a> 
+<h3>ON-BOARD DIAGNOSTIC</h3>  
+<a name="id10020000150001"></a> 
+<h4>Features</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The CAN system-related modules have an on-board diagnostic function. The on-board diagnostic function consists of the following functions: A malfunction detection function, which detects malfunctions in the CAN system-related parts; a memory function, which stores detected DTCs; a display function, which indicates malfunctioning areas and status via DTC display.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id10020000150002"></a> 
+<h4>On-board diagnostic function</h4> 
+<a name="id10020000150003"></a> 
+<h5>Malfunction detection function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Detects errors in the input and output signals.</p> </li> 
+<li> <p>If a malfunction is detected, a DTC is output to the DLC-2 through the malfunction indication function. At the same time, malfunction detection results are sent to the memory function.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id10020000150004"></a> 
+<h5>Memory function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The memory function stores malfunctions in input/output signal systems. With this function, malfunction data is not cleared after the ignition is switched off (LOCK), even if the malfunctioning signal system has returned to normal.</p> </li> 
+<li> <p>The stored malfunction information can be cleared by connecting the Mazda Modular Diagnostic System (M-MDS) to the DLC-2 following the Workshop Manual procedure for clearing codes.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id10020000150005"></a> 
+<h5>Display Function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>This function is for outputting present or past malfunctions via the DLC-2 as DTCs.</p> </li> 
+<li> <p>To read DTCs output to the DLC-2, use the Mazda Modular Diagnostic System (M-MDS).</p> </li> 
+</ul>
+</blockquote> 
+<b>DTC table (HS-CAN)</b>
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">    
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DTC output module (M-MDS display)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DTC</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Malfunction location</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="11" colspan="NaN"> <p>PCM</p> <p>(PCM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0073:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0101:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with TCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0104:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with vehicle control module (V/C-module)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0131:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with EPS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0140:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with front body control module (FBCM)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0151:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with SAS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0214:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with start stop unit</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0235:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with laser sensor</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0298:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DC-DC converter (i-ELOOP) </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>DSC HU/CM</p> <p>(ABS)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:88</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with PCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0101:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with TCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0104:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with vehicle control module (V/C-module)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0131:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with EPS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0154:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with SAS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0214:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with start stop unit</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0235:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with laser sensor</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>TCM<sup>*1</sup></p> <p>(TCM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0073:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with PCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0131:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with EPS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="7" colspan="NaN"> <p>Front body control module (FBCM)</p> <p>(F_BCM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:88</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with PCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0101:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with TCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0151:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with SAS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0214:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with start stop unit</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U023A:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with forward sensing camera</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>AFS control module<sup>*2</sup></p> <p>(AFS)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:88</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with PCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0131:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with EPS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0140:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with front body control module (FBCM)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="11" colspan="NaN"> <p>Vehicle control module (V/C-module)<sup>*3</sup></p> <p>(SBS/MRCC)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:88</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with PCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0101:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with TCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0131:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with EPS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0140:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with front body control module (FBCM)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0151:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with SAS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0214:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with start stop unit</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0235:68</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with laser sensor</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U023A:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with forward sensing camera</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="3" colspan="NaN"> <p>DC-DC converter (i-ELOOP) <sup>*4</sup></p> <p>(DCDC)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:88</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with PCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>Position memory control module<sup>*5</sup></p> <p>(DSM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with PCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0101:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with TCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0151:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with SAS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0214:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with start stop unit</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>Laser sensor<sup>*6</sup></p> <p>(SCBS)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with PCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0131:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with EPS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="7" colspan="NaN"> <p>Forward sensing camera<sup>*7</sup></p> <p>(FSC)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:88</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with PCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0131:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with EPS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0140:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with front body control module (FBCM)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0214:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with start stop unit</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="4" colspan="NaN"> <p>EPS control module</p> <p>(EPS)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:88</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with PCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="10" colspan="NaN"> <p>Start stop unit</p> <p>(SSU)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:88</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with PCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0101:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with TCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:87</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0131:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with EPS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0140:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with front body control module (FBCM)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0146:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0151:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with SAS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>SAS control module</p> <p>(RCM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:88</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Audio amplifier<sup>*8</sup></p> <p>(AM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:88</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="12" colspan="NaN"> <p>Instrument cluster</p> <p>(IC)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:88</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with PCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0101:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with TCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0104:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with vehicle control module (V/C-module)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0131:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with EPS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0140:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with front body control module (FBCM)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0151:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with SAS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0182:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with AFS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0214:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with start stop unit</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0235:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with laser sensor</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U023A:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with forward sensing camera</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<dl> 
+<dt>*1</dt> 
+<dd>
+<b>ATX vehicles</b>
+</dd> 
+<dt>*2</dt> 
+<dd>
+<b>With AFS system</b>
+</dd> 
+<dt>*3</dt> 
+<dd>
+<b>With mazda radar cruise control (MRCC)</b>
+</dd> 
+<dt>*4</dt> 
+<dd>
+<b>With i-ELOOP system</b>
+</dd> 
+<dt>*5</dt> 
+<dd>
+<b>With power seat</b>
+</dd> 
+<dt>*6</dt> 
+<dd>
+<b>With smart city brake support</b>
+</dd> 
+<dt>*7</dt> 
+<dd>
+<b>With forward sensing camera</b>
+</dd> 
+<dt>*8</dt> 
+<dd>
+<b>With Bose<sup>&reg;</sup></b>
+</dd> 
+</dl> 
+<b>DTC table (MS-CAN)</b>
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">    
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DTC output module (M-MDS display)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DTC</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Malfunction location</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="3" colspan="NaN"> <p>Instrument cluster</p> <p>(IC)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0010:88</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0142:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with rear body control module (RBCM)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0232:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with BSM control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="4" colspan="NaN"> <p>Audio unit<sup>*1</sup></p> <p>(ACU)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0010:88</p> <p>(16:Er12)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0142:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with rear body control module (RBCM)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0193:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with SIRIUS satellite radio unit</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>Climate control unit</p> <p>(EATC)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0010:88</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>BSM control module (LH)<sup>*2</sup></p> <p>(BSML)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:88</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with PCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0131:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with EPS control module</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0214:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with start stop unit</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>Rear body control module (RBCM)</p> <p>(R_BCM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0010:88</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Unit communication error</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with instrument cluster</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<dl> 
+<dt>*1</dt> 
+<dd>
+<b>With Bluetooth system</b>
+</dd> 
+<dt>*2</dt> 
+<dd>
+<b>With BSM system</b>
+</dd> 
+</dl>   
+<a name="id10020000150006"></a> 
+<h4>Malfunction diagnosis procedure</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>After the vehicle is brought in, verify the repair order form and the malfunctioning symptom, and if a CAN malfunction is considered to be the cause, perform CAN malfunction diagnosis to determine if the malfunction is in the CAN system or not.</p> </li> 
+<li> <p>For CAN malfunction diagnosis, the voltage at the CAN connection terminal on the DLC-2 is measured, and based on the measured value, the CAN circuit can be examined or the malfunction symptom can be determined.</p> </li> 
+<li> <p>If the malfunction symptom is not an open circuit, inspect the voltage or continuity at the CAN circuit and determine the malfunctioning part.</p> </li> 
+<li> <p>If the malfunction symptom is an open circuit, determine the area of the open circuit by using the displayed communication error DTC and the module in which communication has failed.</p> </li> 
+</ul>
+</blockquote> 
+<a name="id10020000150007"></a> 
+<h5>Example: determining open circuit location</h5> 
+<blockquote>1.  Verify the CAN system-related module DTCs and the failed module using the Mazda Modular Diagnostic System (M-MDS). <br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">     
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DTC output module</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Mazda Modular Diagnostic System (M-MDS) display</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Displayed DTC</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>System malfunction location</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PCM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>PCM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TCM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TCM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Front body control module (FBCM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>F_BCM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle control module (V/C-module)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SBS/MRCC</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Laser sensor</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SCBS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Forward sensing camera</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>FSC</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>EPS control module</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>EPS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Start stop unit</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SSU</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Instrument cluster</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>IC</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error with DSC HU/CM</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">   
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Module</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Fail</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC HU/CM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br>  
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6xun00001036.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6xun00001036.gif"></a>
+</p>  
+</blockquote> 
+<blockquote>2.  The wiring harness between the DSC HU/CM and connector C-32, or the DSC HU/CM itself could have a malfunction because the DTCs indicating a communication error between the following units, in addition to "Fail" on the DSC HU/CM, are displayed even though communication between the PCM and instrument cluster is normal. <blockquote>
+<ul type="disc"> 
+<li> <p>Between DSC HU/CM and PCM</p> </li> 
+<li> <p>Between DSC HU/CM and TCM</p> </li> 
+<li> <p>Between DSC HU/CM and front body control module (FBCM)</p> </li> 
+<li> <p>Between DSC HU/CM and vehicle control-module (V/C-module)</p> </li> 
+<li> <p>Between DSC HU/CM and laser sensor</p> </li> 
+<li> <p>Between DSC HU/CM and forward sensing camera</p> </li> 
+<li> <p>Between DSC HU/CM and EPS control module</p> </li> 
+<li> <p>Between DSC HU/CM and start stop unit</p> </li> 
+<li> <p>Between DSC HU/CM and instrument cluster</p> </li> 
+</ul>
+</blockquote> 
+</blockquote>   
+<br>
+<br>
+				<a href="id100000001400.html">< Previous</a>
+			&nbsp;
+				<a href="id104000001300.html">Next ></a>
+			<br>
+<div align="right">
+<a href="#">Back to Top</a>
+<br>
+</div>
+<div align="center">
+<em>&copy; 2012 Mazda North American Operations, U.S.A.</em>
+</div>
+</body>
+</html>

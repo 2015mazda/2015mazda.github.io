@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:java="smconverter.ConverterUtilities">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE MEDIA="screen, projection" TYPE="text/css">@import url(../../../../../../../../Styles/wsm.css);</STYLE>
+<META name="doc.taxonomy" content="SH||Transmission/Transaxle||Automatic Transaxle">
+<META name="doc.language" content="en-US">
+<META name="doc.model-year" content="MAZDA6::2014||">
+<META name="doc.category" content="Transmission/Transaxle">
+<title>TCM [FW6A-EL]</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center">
+<IFRAME scrolling="no" frameborder="0" height="0px" width="100%" marginwidth="0" src="http://am.mazdaserviceinfo.com/service/esi/emazda/esiContent.jsp" id="headerIFrame" name="headerIFrame"></IFRAME>
+</td>
+</tr>
+</table>
+<br>
+				<a href="id0517h1361900.html">< Previous</a>
+			&nbsp;
+				<a href="id0517h1362100.html">Next ></a>
+			<br>
+<h2>2014 -                                     
+	                	Mazda6 -                    
+	                	Transmission/Transaxle</h2>
+<a name="id0517h1362000"></a> 
+<h3>TCM [FW6A-EL]</h3>  
+<a name="id0517h136200001"></a> 
+<h4>Purpose/Function</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The TCM detects the vehicle conditions and performs calculations and processing based on input information from each type of sensor and switch.</p> </li> 
+<li> <p>Outputs control signals to each solenoid valve so that each type of control is optimally implemented according to the vehicle conditions.</p> </li> 
+</ul>
+</blockquote> 
+<a name="id0517h136200002"></a> 
+<h5>Function Table</h5> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">      
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="4"> <p>Control item</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Main control content</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>Shift point control</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="4" colspan="NaN"> <p>Automatic shift control</p> <p>(D position)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="4" colspan="NaN"> <p>Driving mode</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Normal mode</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Mode selection during normal driving (without drive selection switch)</p> </li> 
+<li> <p>Normal mode selected using drive selection (with drive selection switch)</p> </li> 
+<li> <p>Performs automatic shift corresponding to vehicle speed and accelerator pedal depression amount</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>SPORT mode</p> <p>(with drive selection switch)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>SPORT mode selected using drive selection</p> </li> 
+<li> <p>Performs automatic shifting corresponding to vehicle speed and accelerator pedal depression amount</p> </li> 
+<li> <p>Lower gear is selected than while in the Normal mode</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Active Adaptive Shift (AAS) mode</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Unnecessary shift up is suppressed for several seconds by maintaining the gear corresponding to the operation speed at which the accelerator pedal is released</p> </li> 
+<li> <p>The optimum gear on the low vehicle-speed side is selected and shift down is executed corresponding to the operation force at which the brake pedal is depressed</p> </li> 
+<li> <p>During cornering, shift up is suppressed in preparation for acceleration after cornering</p> </li> 
+<li> <p>In regions of high elevation, the optimum gear is selected corresponding to the environment</p> </li> 
+<li> <p>The slope is estimated in the TCM to select the appropriate gear for ascent and descent</p> </li> 
+<li> <p>When SPORT mode is selected, the AAS selects a lower gear compared to when normal mode is selected, and maintains it for a longer period of time (with drive selection switch)</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>High ATF temperature mode</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Controls engine torque when the ATF temperature is high</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="3"> <p>Manual shift control</p> <p>(M position)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>When M position is selected, manual shifting is prioritized according to the driver&rsquo;s shift up/shift down operation.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="3" colspan="NaN"> <p>Shift pressure control</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="3"> <p>Line pressure control</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Controls line pressure with high accuracy and fine control corresponding to engine load conditions and vehicle driving conditions</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="3"> <p>Direct electric shift control</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Performs direct, electronic control of clutch engagement pressure appropriate to engine load conditions and vehicle driving conditions</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="3"> <p>Learning control</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Learns engine performance changes and transaxle deterioration over time to optimally correct clutch engagement pressure</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="4"> <p>Torque converter clutch (TCC) control</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Based on adoption of full range TCC control, active TCC control directly after acceleration from stop</p> </li> 
+<li> <p>By gradually engaging/disengaging TCC piston, shock during operation is reduced</p> </li> 
+<li> <p>Implements TCC control when accelerator pedal is fully closed for improved fuel economy and emission performance</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="4"> <p>Engine-transaxle integration control</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Optimally controls engine output torque when shifting</p> </li> 
+<li> <p>Calculates optimum clutch engagement pressure according to engine output torque</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="4"> <p>On-board diagnostic system</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Main part of transaxle control includes self-diagnosis function. In case of malfunction, automatic transmission warning light illuminates to alert driver, and DTC is stored in TCM</p> </li> 
+<li> <p>When transaxle malfunction is determined resulting from on-board diagnostic test, system control is switched to prevent any dangerous situation while driving</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr>  
+</tbody>
+</table>
+<br>   
+<a name="id0517h136200003"></a> 
+<h4>Construction</h4>  
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am3uun00002428.tif"><img align="absmiddle" border="0" src="../../../img.dir/am3uun00002428.gif"></a>
+</p>   
+<p align="center">Block diagram</p> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6xun00001741.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6xun00001741.gif"></a>
+</p>   
+<a name="id0517h136200004"></a> 
+<h4>Operation</h4>  
+<p align="center">Correlation between control and input/output parts</p> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6xun00001742.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6xun00001742.gif"></a>
+</p>   
+<br>
+<br>
+				<a href="id0517h1361900.html">< Previous</a>
+			&nbsp;
+				<a href="id0517h1362100.html">Next ></a>
+			<br>
+<div align="right">
+<a href="#">Back to Top</a>
+<br>
+</div>
+<div align="center">
+<em>&copy; 2012 Mazda North American Operations, U.S.A.</em>
+</div>
+</body>
+</html>

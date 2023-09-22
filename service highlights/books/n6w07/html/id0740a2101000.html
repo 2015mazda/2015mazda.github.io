@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:java="smconverter.ConverterUtilities">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE MEDIA="screen, projection" TYPE="text/css">@import url(../../../../../../../../Styles/wsm.css);</STYLE>
+<META name="doc.taxonomy" content="SH||HVAC||Control System">
+<META name="doc.language" content="en-US">
+<META name="doc.model-year" content="MAZDA6::2014||">
+<META name="doc.category" content="HVAC">
+<title>MANUAL AIR CONDITIONER CONTROL SYSTEM [MANUAL AIR CONDITIONER]</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center">
+<IFRAME scrolling="no" frameborder="0" height="0px" width="100%" marginwidth="0" src="http://am.mazdaserviceinfo.com/service/esi/emazda/esiContent.jsp" id="headerIFrame" name="headerIFrame"></IFRAME>
+</td>
+</tr>
+</table>
+<br>
+				<a href="id0740a2320100.html">< Previous</a>
+			&nbsp;<br>
+<h2>2014 -                                     
+	                	Mazda6 -                    
+	                	HVAC</h2>
+<a name="id0740a2101000"></a> 
+<h3>MANUAL AIR CONDITIONER CONTROL SYSTEM [MANUAL AIR CONDITIONER]</h3>  
+<a name="id0740a210100001"></a> 
+<h4>Outline</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The climate control unit performs the following controls based on the signals from each switch/dial and the sensor.</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Airflow temperature control</p> </li> 
+<li> <p>Airflow volume control</p> </li> 
+<li> <p>Airflow mode control</p> </li> 
+<li> <p>Air intake control</p> </li> 
+<li> <p>A/C compressor control</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+<a name="id0740a210100002"></a> 
+<h5>A/C cut-off control</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Controls the A/C operation by switching the A/C relay on/off at the optimal timing according to engine operation conditions. (See <a href="../../n6w01/html/id0140g0206200.html">A/C CUT-OFF CONTROL [SKYACTIV-G 2.5]</a>.)</p> </li> 
+</ul>
+</blockquote>   
+<a name="id0740a210100003"></a> 
+<h4>Block Diagram</h4>  
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6xun00001456.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6xun00001456.gif"></a>
+</p>   
+<a name="id0740a210100004"></a> 
+<h4>Outline of Control System</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The manual air conditioner system functions based on the five basic types of controls and three supplementary functions.</p> </li> 
+</ul>
+</blockquote> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">   
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control name</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control part</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Airflow temperature control</p> </li> 
+<li> <p>Airflow volume control</p> </li> 
+<li> <p>Airflow mode control</p> </li> 
+<li> <p>Air intake control</p> </li> 
+<li> <p>A/C compressor control</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Climate control unit</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">  
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Supplementary function</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Fail-safe function</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Sensor signal delay function</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On-board diagnostic function</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br>  
+<a name="id0740a210100005"></a> 
+<h4>Sensor Signal Delay Function</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>When the engine is restarted after being temporarily stopped, the ambient temperature sensor may detect a temperature higher than the actual ambient temperature.</p> </li> 
+<li> <p>To prevent this, if the engine coolant temperature exceeds <b>55 &deg;C {131 &deg;F}</b>, control of each system is performed based on the ambient temperature data before the engine was stopped, which is stored in the climate control unit.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0740a210100006"></a> 
+<h4>Airflow Temperature Control</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The climate control unit drives the air mix actuator according to the operation of the temperature setting dial.</p> </li> 
+<li> <p>The air mix actuator changed the air mix door position.</p> </li> 
+</ul>
+</blockquote> 
+<a name="id0740a210100007"></a> 
+<h5>MAX A/C control</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>When the temperature control dial is set to the MAX COLD position, the climate control unit performs the MAX A/C control (when the airflow mode is VENT or BI-LEVEL).</p> </li> 
+<li> <p>The MAX A/C control controls the air conditioner as follows:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Sets the intake mode to REC.</p> </li> 
+<li> <p>Turns on the A/C compressor.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote>   
+<a name="id0740a210100008"></a> 
+<h4>Airflow Volume Control</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The climate control unit changes the blower motor applied voltage (airflow volume) in seven steps according to the operation of the airflow volume control dial.</p> </li> 
+</ul>
+</blockquote> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">   
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Airflow volume control dial</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Blower motor applied voltage</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1st</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>3.7 V</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2nd</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>5.2 V</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>3rd</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>6.9 V</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>4th</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>8.6 V</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>5th</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>10.0 V</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>6th</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>12.1 V</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>7th</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>14.6 V<sup>*1</sup>, 13.0V<sup>*2</sup></p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<dl> 
+<dt> 
+<sup>*1</sup> 
+</dt> 
+<dd>
+<b>When the airflow mode is other than HEAT.</b>
+</dd> 
+<dt> 
+<sup>*2</sup> 
+</dt> 
+<dd>
+<b>When the airflow mode is HEAT.</b>
+</dd> 
+</dl> 
+<a name="id0740a210100009"></a> 
+<h5>Start-up burn-out prevention function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The start-up burn-out prevention function prevents the blower motor from being burnt out because of excess current.</p> </li> 
+<li> <p>When the blower motor is started-up from the stopped status with a blower motor applied voltage of <b>4.4 V</b> or more, the blower motor applied voltage is fixed at <b>4.4 V</b> for <b>1 s</b>.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0740a210100010"></a> 
+<h5>Delay control</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>When the blower motor rotation exceeds and rises above the blower motor applied voltage from a low speed condition, the delay control delays the blower motor applied voltage for <b>approx. 1 s</b> and stabilizes the motor operation.</p> </li> 
+</ul>
+</blockquote>   
+<a name="id0740a210100011"></a> 
+<h4>Airflow Mode Control</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The climate control unit switches the airflow mode based on the MODE switch operation.</p> </li> 
+</ul>
+</blockquote> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">    
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Airflow mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Operation switch</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Air vent</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>VENT</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Mode switch</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>CENTER VENT, SIDE VENT</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>BI-LEVEL</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>CENTER VENT, SIDE VENT, FRONT HEAT, REAR HEAT</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>HEAT</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>FRONT HEAT, REAR HEAT, SIDE DEMISTER (low volume), DEFROSTER (low volume), SIDE VENT (low volume)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DEF/HEAT</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>FRONT HEAT, REAR HEAT, SIDE DEMISTER, DEFROSTER, SIDE VENT (low volume)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DEFROSTER</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DEFROSTER switch</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>SIDE DEMISTER, DEFROSTER, SIDE VENT (low volume)</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br>  
+<a name="id0740a210100012"></a> 
+<h4>Air Intake Control</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The climate control unit switches the air intake mode based on the REC/FRESH switch operation.</p> </li> 
+</ul>
+</blockquote> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">   
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Air intake mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>REC switch operation</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>FRESH</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Fixed to FRESH when the FRESH switch is turned on during REC mode</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>REC</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Fixed to REC when the RECIRCULATE switch is turned on during FRESH mode</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<a name="id0740a210100013"></a> 
+<h5>Defroster control</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The defroster control improves the defrosting effect.</p> </li> 
+<li> <p>When the defroster switch turns on, the climate control unit fixes the air intake mode to FRESH.</p> </li> 
+<li> <p>The air intake is fixed at FRESH even if it has been set to REC manually.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0740a210100014"></a> 
+<h5>REC mode control under severe heat</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>When the vehicle is driven at a very low speed with the A/C on under a severe heat condition, the climate control unit may change the air intake mode from FRESH to REC automatically.</p> </li> 
+<li> <p>Due to this, load to the A/C compressor is reduced.</p> </li> 
+<li> <p>When the air intake mode is switched to REC, the indicator on the REC switch illuminates.</p> </li> 
+</ul>
+</blockquote>   
+<a name="id0740a210100015"></a> 
+<h4>A/C Compressor Control</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The climate control unit sends the A/C signal to the PCM based on the signals sent from the A/C switch, airflow volume control dial, and evaporator temperature sensor.</p> </li> 
+<li> <p>The PCM turns the A/C relay on/off based on the input signals from the A/C signal and A/C pressure sensor and controls the A/C compressor (magnetic clutch) operation.</p> </li> 
+</ul>
+</blockquote>  
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6xun00001457.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6xun00001457.gif"></a>
+</p>  
+<a name="id0740a210100016"></a> 
+<h5>A/C signal on/off control</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>When the A/C switch and fan switch are turned on, the climate control unit turns the A/C signal (magnetic clutch) on/off based on the temperature of the air passing through the evaporator.</p>  <p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/ac5uun00000396.tif"><img align="absmiddle" border="0" src="../../../img.dir/ac5uun00000396.gif"></a>
+</p>  
+</li> 
+<li> <p>When the fan switch and A/C switch are turned on, the climate control unit controls the surface temperature of the evaporator so that it is within a certain range to prevent the evaporator from freezing.</p> </li> 
+<li> <p>When the ambient temperature is low, the climate control unit sets the A/C signal (magnetic clutch) off-temperature to low to prevent window fogging.</p> </li> 
+</ul>
+</blockquote>   
+<br>
+<br>
+				<a href="id0740a2320100.html">< Previous</a>
+			&nbsp;<br>
+<div align="right">
+<a href="#">Back to Top</a>
+<br>
+</div>
+<div align="center">
+<em>&copy; 2012 Mazda North American Operations, U.S.A.</em>
+</div>
+</body>
+</html>

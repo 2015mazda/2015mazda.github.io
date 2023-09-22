@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:java="smconverter.ConverterUtilities">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE MEDIA="screen, projection" TYPE="text/css">@import url(../../../../../../../../Styles/wsm.css);</STYLE>
+<META name="doc.taxonomy" content="SH||Engine||Control System">
+<META name="doc.language" content="en-US">
+<META name="doc.model-year" content="MAZDA6::2014||">
+<META name="doc.category" content="Engine">
+<title>FUEL INJECTION CONTROL SYSTEM [SKYACTIV-G 2.5]</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center">
+<IFRAME scrolling="no" frameborder="0" height="0px" width="100%" marginwidth="0" src="http://am.mazdaserviceinfo.com/service/esi/emazda/esiContent.jsp" id="headerIFrame" name="headerIFrame"></IFRAME>
+</td>
+</tr>
+</table>
+<br>
+				<a href="id0140g0318100.html">< Previous</a>
+			&nbsp;
+				<a href="id0140g0004100.html">Next ></a>
+			<br>
+<h2>2014 -                                     
+	                	Mazda6 -                    
+	                	Engine</h2>
+<a name="id0140g0138600"></a> 
+<h3>FUEL INJECTION CONTROL SYSTEM [SKYACTIV-G 2.5]</h3>  
+<a name="id0140g013860001"></a> 
+<h4>Outline</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Performs optimum fuel injection according to engine operation conditions.</p> </li> 
+<li> <p>The PCM determines the engine operation conditions based on the signals from each input device and drives the fuel injectors at the optimal fuel injection time (fuel injection amount) and the fuel injection timing to inject fuel.</p> </li> 
+<li> <p>Optimally controls combustion based on fuel injection amount, fuel injection timing, number of fuel injections, and the fuel pressure to realize emission performance improvement and higher engine output.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0140g013860002"></a> 
+<h4>Block Diagram</h4>  
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6xun00001370.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6xun00001370.gif"></a>
+</p>   
+<a name="id0140g013860003"></a> 
+<h4>Operation</h4> 
+<a name="id0140g013860004"></a> 
+<h5>Injection timing</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Fuel injection timing is switched according to the engine operation conditions.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Fuel injection is performed at the appropriate injection timing and amount based on the following sensor input signals synchronized with the crankshaft rotation during the intake or compression stroke at each cylinder.</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>MAF sensor</p> </li> 
+<li> <p>MAP sensor</p> </li> 
+<li> <p>IAT sensor No.1</p> </li> 
+<li> <p>IAT sensor No.2</p> </li> 
+<li> <p>BARO sensor</p> </li> 
+<li> <p>CKP sensor</p> </li> 
+<li> <p>ECT sensor No.1</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote>  
+<a name="id0140g013860005"></a> 
+<h5>Injection time</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The PCM calculates the fuel injection amount according to the engine operation conditions as the fuel injection time and energizes the fuel injectors.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Fuel injector energization time and operation conditions</b> 
+<li> <p>The fuel injectors cause an operation delay with the start of energization from the PCM. The PCM calculates the fuel injection time by adding the non-injection time (ineffective injection time) due to the operation delay to the actual injection time (effective injection time), and energizes the fuel injectors for this time.</p>  <p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/ac5uun00001135.tif"><img align="absmiddle" border="0" src="../../../img.dir/ac5uun00001135.gif"></a>
+</p>  
+</li> 
+<li> <p>The fuel injection time is based on the following formula:</p> <p> <b>Fuel injection time = effective injection time + ineffective injection time</b> </p> </li> 
+<blockquote>
+<ul type="square"> 
+<b>Ineffective injection time</b> 
+<li> <p>The fuel injectors cause an operation delay with the start of energization due to a delay in the rise of operation current by coil inductance, mass of the needle valve and plunger, and spring resistance. This delay is the ineffective injection time.</p> </li> 
+<li> <p>The non-injection time is affected by the change in fuel pressure and the battery voltage. Accordingly, the PCM sets the non-injection time according to the fuel pressure and the battery voltage.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="square"> 
+<b>Effective injection time</b> 
+<li> <p>The time when the fuel injector valve is open, which is the actual fuel injection time, is called the effective injection time.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote>  
+<a name="id0140g013860006"></a> 
+<h5>Determination of effective injection time</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The PCM divides the engine operation conditions into control zones according to engine speed and intake air amount, and determines the effective injection time at each control zone to perform optimum air/fuel ratio control in all engine driving ranges.</p>  <p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6zzn00002915.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6zzn00002915.gif"></a>
+</p>  
+</li> 
+</ul>
+</blockquote> 
+<b>Control zone table</b>
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">   
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control name</p> </td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control outline</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Start zone</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<b>Purpose</b> 
+<li> <p>Improved startability</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Control condition</b> 
+<li> <p>When engine speed is less than 500 rpm</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Determination of fuel injection time</b> 
+<li> <p>According to engine coolant temperature and engine speed and fuel pressure</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Feedback zone (λ = 1)</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<b>Purpose</b> 
+<li> <p>Improved fuel economy</p> </li> 
+<li> <p>Improved exhaust gas purification</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Control condition</b> 
+<li> <p>During engine operation condition except for engine start zone and feedback zone (λ rich) and fuel cut zone</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Determination of fuel injection time</b> 
+<li> <p>During normal driving, the various correction amounts are added to the basic injection time during normal driving to obtain a ratio that is close to the theoretical air/fuel ratio.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>Feedback zone (λ rich)</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<b>Purpose</b> 
+<li> <p>Improved driveability</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Control condition</b> 
+<li> <p>The accelerator pedal opening angle is the specified value or more</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Determination of fuel injection time</b> 
+<li> <p>Fuel amount increases according to accelerator pedal opening angle</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<b>Purpose</b> 
+<li> <p>Protection of catalytic converter and exhaust system components (suppression of gas temperature)</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Control condition</b> 
+<li> <p>The estimated exhaust temperature and estimated catalytic converter temperature are the specified value or more.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Determination of fuel injection time</b> 
+<li> <p>Fuel amount increases according to estimated exhaust gas temperature and estimated catalytic converter temperature (promotion of cooling efficiency from vaporization heat)</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Excessive speed fuel cut zone</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<b>Purpose</b> 
+<li> <p>Engine protection</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Control condition</b> 
+<li> <p>When engine speed is 6,500 rpm or more</p> </li> 
+<li> <p>When engine speed is 2,500 rpm or more (When DTC P0089:00 is stored)</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Determination of fuel injection time</b> 
+<li> <p>Fuel injection stopped.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Deceleration fuel cut zone</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<b>Purpose</b> 
+<li> <p>Improved fuel economy</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Control condition</b> 
+<li> <p>If all of the following conditions are met while the vehicle is decelerating</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Accelerator pedal is fully closed</p> </li> 
+<li> <p>Engine speed is specified value or more</p> </li> 
+<li> <p>Vehicle speed is specified value or more</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Determination of fuel injection time</b> 
+<li> <p>Fuel injection is stopped.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr>  
+</tbody>
+</table>
+<br>  
+<a name="id0140g013860007"></a> 
+<h5>Fuel injection time calculation method table</h5> (A: Fuel injection time base, B: Correction for fuel injection time)<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">          
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="2" colspan="3"> <p> <b>Contents</b> </p> <p> <b>(Calculation or determination method for fuel injection time and correction)</b> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="5"> <p> <b>Control zone</b> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am3zzn00003449.tif"><img align="absmiddle" border="0" src="../../../img.dir/am3zzn00003449.gif"></a>
+</p> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6zzn00002916.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6zzn00002916.gif"></a>
+</p> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6zzn00002917.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6zzn00002917.gif"></a>
+</p> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/ac5wzn00002022.tif"><img align="absmiddle" border="0" src="../../../img.dir/ac5wzn00002022.gif"></a>
+</p> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/ac5wzn00002023.tif"><img align="absmiddle" border="0" src="../../../img.dir/ac5wzn00002023.gif"></a>
+</p> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="2"> <p>Injection time at engine start</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Set value according to engine coolant temperature (low engine coolant temperature&rarr;long injection time)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="2"> <p>Basic injection time</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p> <b>Basic injection time = Charging efficiency <sup>*1</sup> &times; fuel flow coefficient<sup>*2</sup></b> &times; target equivalent</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="2"> <p>Fuel cut</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Fuel injection time = 0</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="2"> <p>Ineffective injection time</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Set time according to fuel injector performance</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="2"> <p>Volume increase correction at engine start</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Purpose: Ensures engine speed stability just after engine start</p> <blockquote>
+<ul type="disc"> 
+<b>Correction condition</b> 
+<li> <p>Specified time according to engine coolant temperature directly after engine start</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Correction amount</b> 
+<li> <p>Low engine coolant temperature&rarr;large correction</p> </li> 
+<li> <p>Low intake air temperature&rarr;large correction</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="2"> <p>Feedback correction (A/F sensor)</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Purpose: Controls air/fuel ratio to theoretical air/fuel ratio</p> <blockquote>
+<ul type="disc"> 
+<b>Correction amount</b> 
+<li> <p>A/F sensor output current is 0 mA or less&rarr;volume decrease correction</p> </li> 
+<li> <p>A/F sensor output current is 0 mA or more&rarr;volume increase correction</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="2"> <p>Feedback correction (HO2S)</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Purpose: Controls air/fuel ratio to theoretical air/fuel ratio</p> <blockquote>
+<ul type="disc"> 
+<b>Correction amount</b> 
+<li> <p>HO2S output voltage is approx. 0.7 V or more&rarr;volume decrease correction</p> </li> 
+<li> <p>HO2S output voltage is approx. 0.7 V or less&rarr;volume increase correction</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="2"> <p>Warm-up volume increase correction</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Purpose: Ensures combustion stability when engine coolant temperature is low</p> <blockquote>
+<ul type="disc"> 
+<b>Correction condition</b> 
+<li> <p>When engine coolant temperature is at set value</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Correction amount</b> 
+<li> <p>High charging efficiency, low engine coolant temperature&rarr;large correction</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="2"> <p>Learning correction</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Purpose: Corrects deviation in air/fuel ratio from deterioration over time of mechanical devices</p> <blockquote>
+<ul type="disc"> 
+<b>Correction amount</b> 
+<li> <p>Learned value based on average value of A/F deviation amount (feedback amount)</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="2"> <p>Heavy load volume increase correction</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Purpose: Improved engine output, decrease of exhaust gas temperature</p> <blockquote>
+<ul type="disc"> 
+<b>Correction condition</b> 
+<li> <p>Based on the fixed value when the accelerator pedal opening angle is a certain value or more, otherwise, based on engine speed and charging efficiency.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Correction amount</b> 
+<li> <p>High engine speed, high charging efficiency&rarr;large correction</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<dl> 
+<dt>*1</dt> 
+<dd>
+<b>Charging efficiency is the ratio of the actual amount of intake air to the maximum air charging amount (mass volume) of the cylinder. The value increases as the engine load increases.</b>
+</dd> 
+<dt>*2</dt> 
+<dd>
+<b>Fuel flow coefficient is a coefficient to calculate a fuel injection time from a fuel injection amount required for an intake air amount.</b>
+</dd> 
+</dl>  
+<a name="id0140g013860008"></a> 
+<h5>Fuel cut</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Includes fuel cut under the following conditions, except fuel cut at excessive engine speed and deceleration fuel cut according to engine operation.</p> </li> 
+</ul>
+</blockquote> 
+<b>Fuel cut table</b>
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">   
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control name</p> </td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control outline</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Fuel cut during selector lever shifting in D range (ATX)</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<b>Purpose</b> 
+<li> <p>ATX protection</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Control conditions</b> 
+<li> <p>When shifting while vehicle is stopped and engine raced</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Sensor malfunction fuel cut</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<b>Purpose</b> 
+<li> <p>To prevent engine damage from abnormal ignition due to a malfunction input of a cylinder identification or the engine speed signal.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Control conditions</b> 
+<li> <p>When a malfunction in the crankshaft position sensor or exhaust camshaft position sensor is detected</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Dechoke control</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<b>Purpose</b> 
+<li> <p>To improve engine startability when spark plugs are flooded (scavenging)</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Control conditions</b> 
+<li> <p>When cranking close to fully-open throttle valve</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Theft prevention</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<b>Purpose</b> 
+<li> <p>To prevent theft</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Control conditions</b> 
+<li> <p>Immobilizer system related information (engine start prohibited) received from start stop unit</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Fuel-cut at time of collision</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<b>Purpose</b> 
+<li> <p>For safety assurance</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Control conditions</b> 
+<li> <p>Collision signal from SAS control module is received</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr>  
+</tbody>
+</table>
+<br>  
+<a name="id0140g013860009"></a> 
+<h5>Boost Circuit</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The battery positive voltage input via the fuel injector relay is boosted up to 40 V.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0140g013860010"></a> 
+<h5>Output Circuit</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>To improve fuel injection response, the plunger pulling force is strengthened by providing high current (over excitation current) when the fuel injector is open.</p> </li> 
+<li> <p>To reduce fuel injector heat generation, the opening of the fuel injector is kept open using low current after it opens.</p> </li> 
+</ul>
+</blockquote> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">   
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Fuel injector status</p> </td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>PCM operation</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Opening starts</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ol type="1"> 
+<li> <p>Provides specified value, boosted by the boost circuit, to the opening transistor.</p> </li> 
+<li> <p>Voltage is provided to the fuel injector, the ground transistor is turned on and grounded, and the fuel injector opens.</p> </li> 
+<li> <p>After the fuel injector is opened, the opening transistor is turned off.</p> </li> 
+</ol>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Opening held</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Controls the on/off of the holding transistor (12 V output) so that the hold current of the fuel injector is constant.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Closing</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Turns off the holding and ground transistors at the same time the fuel injection signal from the PCM is stopped, and cuts the current.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr>  
+</tbody>
+</table>
+<br>   
+<br>
+<br>
+				<a href="id0140g0318100.html">< Previous</a>
+			&nbsp;
+				<a href="id0140g0004100.html">Next ></a>
+			<br>
+<div align="right">
+<a href="#">Back to Top</a>
+<br>
+</div>
+<div align="center">
+<em>&copy; 2012 Mazda North American Operations, U.S.A.</em>
+</div>
+</body>
+</html>

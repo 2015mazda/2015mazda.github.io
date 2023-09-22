@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:java="smconverter.ConverterUtilities">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE MEDIA="screen, projection" TYPE="text/css">@import url(../../../../../../../../Styles/wsm.css);</STYLE>
+<META name="doc.taxonomy" content="SH||Brakes||On-Board Diagnostics">
+<META name="doc.language" content="en-US">
+<META name="doc.model-year" content="MAZDA6::2014||">
+<META name="doc.category" content="Brakes">
+<title>ON-BOARD DIAGNOSTIC SYSTEM [LASER SENSOR]</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center">
+<IFRAME scrolling="no" frameborder="0" height="0px" width="100%" marginwidth="0" src="http://am.mazdaserviceinfo.com/service/esi/emazda/esiContent.jsp" id="headerIFrame" name="headerIFrame"></IFRAME>
+</td>
+</tr>
+</table>
+<br>
+				<a href="id0402b2100700.html">< Previous</a>
+			&nbsp;
+				<a href="id0402c4180800.html">Next ></a>
+			<br>
+<h2>2014 -                                     
+	                	Mazda6 -                    
+	                	Brakes</h2>
+<a name="id0402c4181300"></a> 
+<h3>ON-BOARD DIAGNOSTIC SYSTEM [LASER SENSOR]</h3>  
+<a name="id0402c418130001"></a> 
+<h4>OUTLINE</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The on-board diagnostic system consists of a malfunction detection system that detects malfunctions in input/output signals when the ignition is switched ON, a PID/data monitor function that reads out specified input/output signals, and an active command mode function that allows for override operation of output parts (such as solenoid valves).</p> </li> 
+<li> <p>The Data Link Connector 2 (DLC-2), which groups together all the connectors used for malfunction diagnosis and detecting/repair into a single location, has been adopted, thereby improving serviceability. Diagnosis is performed by connecting the Mazda Modular Diagnostic System (M-MDS) to the DLC-2.</p> </li> 
+<li> <p>In addition to DTC read-out, the Mazda Modular Diagnostic System (M-MDS) is used to clear DTCs using the display screen of the diagnostic tester, and to access the PID/data monitor and active command modes functions, providing enhanced malfunction diagnosis and improved serviceability.</p> </li> 
+</ul>
+</blockquote>  
+<p align="center">Block diagram</p> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/ac5wzn00000902.tif"><img align="absmiddle" border="0" src="../../../img.dir/ac5wzn00000902.gif"></a>
+</p>   
+<a name="id0402c418130002"></a> 
+<h4>FUNCTION</h4> 
+<a name="id0402c418130003"></a> 
+<h5>Malfunction detection function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The malfunction detection function detects and displays malfunctions in the input/output signal system of the laser sensor when the ignition is switched ON.</p> </li> 
+<li> <p>If the laser sensor malfunction is detected, the master warning light is illuminated and the message &ldquo;SCBS Inspection Required&rdquo; is indicated in the TFT LCD display. DTCs can be output through the CAN_H and CAN_L of the DLC-2 using the external tester communication function. At the same time, malfunction detection results are sent to the memory and fail-safe functions.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0402c418130004"></a> 
+<h5>Memory function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The memory function stores DTCs of malfunctions in input/output signal systems. With this function, once a DTC is stored it is not cleared after the ignition has been switched off, even if the malfunctioning signal system has returned to normal.</p> </li> 
+<li> <p>Since the laser sensor has a built-in non-volatile memory, DTCs are not cleared even if the battery is removed. Therefore, it is necessary to clear the memory after performing repairs. Refer to the Workshop Manual for the DTC clearing procedure.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0402c418130005"></a> 
+<h5>DTC 7-digit code definition</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>When related systems or components have failed, the sensor stores the DTC of the malfunctioning part in the sensor memory, and allows for the retrieval of the stored data using the scanning tool when necessary. The DTCs are indicated using seven digits. Each digit indicates the following.</p>  <p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am5ezn00001087.tif"><img align="absmiddle" border="0" src="../../../img.dir/am5ezn00001087.gif"></a>
+</p>  
+</li> 
+</ul>
+</blockquote>  
+<a name="id0402c418130006"></a> 
+<h5>Fail-safe function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>When the malfunction detection function determines a malfunction, the master warning light illuminates and the message &ldquo;SCBS Inspection Required&rdquo; is indicated in the TFT LCD display to alert the driver. At this time, the Smart City Brake Support (SCBS) is inhibited.</p> </li> 
+</ul>
+</blockquote> 
+<b>DTC table</b>&times;: Applicable-: Not applicable<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">         
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DTC No.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Master warning light</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Message in the TFT LCD display</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Fail-safe function</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Malfunction location</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Drive cycle</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Self test type<sup>*1</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Memory function</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>SCBS</p> <p> Inspection</p> <p> Required</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Smart City Brake Support (SCBS) control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>CAN line</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>-</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0131:00</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0401:68</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SCBS</p> <p> Inspection</p> <p> Required</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Smart City Brake Support (SCBS) control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Abnormal message from PCM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>-</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0415:68</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SCBS</p> <p> Inspection</p> <p> Required</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Smart City Brake Support (SCBS) control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Abnormal message from DSC HU/CM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>-</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0420:68</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SCBS</p> <p> Inspection</p> <p> Required</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Smart City Brake Support (SCBS) control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Abnormal message from EPS CM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>-</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0423:68</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SCBS</p> <p> Inspection</p> <p> Required</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Smart City Brake Support (SCBS) control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Abnormal message from instrument cluster</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>-</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U1A14:49</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SCBS</p> <p> Inspection</p> <p> Required</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Smart City Brake Support (SCBS) control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Laser sensor</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>-</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U2300:55</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>SCBS</p> <p> Inspection</p> <p> Required</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Smart City Brake Support (SCBS) control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>Configuration data not recorded or data error</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>-</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U2300:56</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Smart City Brake Support (SCBS) control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>-</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U3000:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>SCBS</p> <p> Inspection</p> <p> Required</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Smart City Brake Support (SCBS) control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>Laser sensor (internal malfunction)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>-</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U3000:64</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Smart City Brake Support (SCBS) control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>-</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U3000:66</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SCBS</p> <p> Inspection</p> <p> Required</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Smart City Brake Support (SCBS) control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Laser sensor</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>-</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<dl> 
+<dt>*<sup>1</sup>
+</dt> 
+<dd>
+<b>C: CMDTC self-test</b>
+</dd> 
+</dl>  
+<a name="id0402c418130007"></a> 
+<h5>Status byte for DTC</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The status byte is the two-digit code (two digits after hyphen (-)) after the DTC.</p>  <p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am5ezn00002077.tif"><img align="absmiddle" border="0" src="../../../img.dir/am5ezn00002077.gif"></a>
+</p>  
+</li> 
+<li> <p>The status byte is a code which indicates the pending code, current/past malfunction status, or warning illumination status.</p> </li> 
+<li> <p>The status byte can be read by performing a CMDTC self test using the Mazda Modular Diagnostic System (M-MDS).</p> </li> 
+<li> <p>For details on the status byte, refer to the explanation on the Mazda Modular Diagnostic System (M-MDS) when reading the DTC.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0402c418130008"></a> 
+<h5>Snapshot data</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The snapshot data stores the currently detected DTC data</p> </li> 
+</ul>
+</blockquote> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">     
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Snapshot data item</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Unit</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Definition</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Corresponding data monitor items</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC_R_BRK</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OK/Error</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC response against brake request from SCBS module</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC_R_BRK_C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OK/Error</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC response against brake assist threshold change from SCBS module</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC_R_NOREQ</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OK/Error</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC response while no request from SCBS module</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC_R_PRECH</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OK/Error</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC response against pre-charge request from SCBS module</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC_SYSTEM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OK/Error</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC system condition</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>ECU_IN_TEMP</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&deg;C</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>ECU internal temperature</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PCM_R_NOREQ</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OK/Error</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PCM response while no request from SCBS module</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PCM_R_REQ</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OK/Error</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PCM response against request from SCBS module</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PCM_SYSTEM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OK/Error</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PCM system condition</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TOTAL_DIST</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>km, ft, mi</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Total distance</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TOTAL_TIME</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>hh:mm:ss</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Total time</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>VPWR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>V</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Power supply</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>VSPD</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>KPH, MPH</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle speed</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br>  
+<a name="id0402c418130009"></a> 
+<h5>PID/data monitor function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The PID/data monitor function is used for optionally selecting input/output signal monitor items preset in the laser sensor and reading them out in real-time.</p> </li> 
+</ul>
+</blockquote> 
+<b>PID/data monitor table</b>
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">    
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Mazda Modular Diagnostic System (M-MDS) display</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Data contents</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Unit/Operation (Mazda Modular Diagnostic System (M-MDS) display)</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DIST_BMP_TGT</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Distance from bumper to target that sensor has detected</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>m</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>VPWR_IG1</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Module supply voltage (IG1)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>V</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>VSPD</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle speed</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>KPH, MPH</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br>  
+<a name="id0402c418130010"></a> 
+<h5>External tester communication function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The external tester communication function enables communication of diagnostic data (DTC read-outs, input/output signal read-outs, operation of input/output parts) between the laser sensor and an external tester.</p> </li> 
+</ul>
+</blockquote> 
+<b>Connections/communication contents</b>
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">    
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="2"> <p>External tester</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="2"> <p>Mazda Modular Diagnostic System (M-MDS)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Connection</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Communication method</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>On-board diagnostic (malfunction detection) function</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Input/output: CAN_H (HS), CAN_L (HS) terminals</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Serial communication</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PID/data monitor function</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Input/output: CAN_H (HS), CAN_L (HS) terminals</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Serial communication</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<blockquote>
+<ul type="disc"> 
+<b>Serial communication</b> 
+<li> <p>Serial communication (two-way communication) allows for multiple data to be sent and received instantly along the same line.</p> </li> 
+<li> <p>By connecting the Mazda Modular Diagnostic System (M-MDS) to the DLC-2, diagnostic data can be sent and received between the Mazda Modular Diagnostic System (M-MDS) and the laser sensor using the CAN_H and CAN_L terminals (within the DLC-2).</p> </li> 
+<li> <p>The laser sensor receives the command signals of the malfunction detection function and PID/data monitor function based on the Mazda Modular Diagnostic System (M-MDS), and sends DTCs and data regarding the operating condition and status of each input/output part to the Mazda Modular Diagnostic System (M-MDS).</p> </li> 
+</ul>
+</blockquote> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">    
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Diagnostic function name</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Signal received</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Signal sent</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Malfunction detection function</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DTC verification signal</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DTC</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PID/data monitor function</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Command signal to read selected monitor item</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Monitored data for requested monitor item</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br>   
+<br>
+<br>
+				<a href="id0402b2100700.html">< Previous</a>
+			&nbsp;
+				<a href="id0402c4180800.html">Next ></a>
+			<br>
+<div align="right">
+<a href="#">Back to Top</a>
+<br>
+</div>
+<div align="center">
+<em>&copy; 2012 Mazda North American Operations, U.S.A.</em>
+</div>
+</body>
+</html>

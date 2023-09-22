@@ -1,0 +1,1192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:java="smconverter.ConverterUtilities">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE MEDIA="screen, projection" TYPE="text/css">@import url(../../../../../../../../Styles/wsm.css);</STYLE>
+<META name="doc.taxonomy" content="SH||Brakes||On-Board Diagnostics">
+<META name="doc.language" content="en-US">
+<META name="doc.model-year" content="MAZDA6::2014||">
+<META name="doc.category" content="Brakes">
+<title>ON-BOARD DIAGNOSTIC SYSTEM [DYNAMIC STABILITY CONTROL (DSC)]</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center">
+<IFRAME scrolling="no" frameborder="0" height="0px" width="100%" marginwidth="0" src="http://am.mazdaserviceinfo.com/service/esi/emazda/esiContent.jsp" id="headerIFrame" name="headerIFrame"></IFRAME>
+</td>
+</tr>
+</table>
+<br>
+				<a href="id040000160800.html">< Previous</a>
+			&nbsp;
+				<a href="id0402b2100700.html">Next ></a>
+			<br>
+<h2>2014 -                                     
+	                	Mazda6 -                    
+	                	Brakes</h2>
+<a name="id0402b2181300"></a> 
+<h3>ON-BOARD DIAGNOSTIC SYSTEM [DYNAMIC STABILITY CONTROL (DSC)]</h3>  
+<a name="id0402b218130001"></a> 
+<h4>OUTLINE</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The on-board diagnostic system consists of a malfunction detection system that detects malfunctions in input/output signals when the ignition is switched ON, a PID/data monitor function that reads out specified input/output signals, and an active command mode function that allows for override operation of output parts (such as solenoid valves).</p> </li> 
+<li> <p>The data link connector 2 (DLC-2), which groups together all the connectors used for malfunction diagnosis and detecting/repair into a single location, has been adopted, thereby improving serviceability. Diagnosis is performed by connecting the Mazda modular diagnostic system (M-MDS) to the DLC-2.</p> </li> 
+<li> <p>In addition to DTC read-out, the Mazda modular diagnostic system (M-MDS) is used to clear DTCs using the display screen of the diagnostic tester, and to access the PID/data monitor and active command modes functions, providing enhanced malfunction diagnosis and improved serviceability.</p> </li> 
+</ul>
+</blockquote>  
+<p align="center">Block diagram</p> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/ac5wzn00000981.tif"><img align="absmiddle" border="0" src="../../../img.dir/ac5wzn00000981.gif"></a>
+</p>   
+<a name="id0402b218130002"></a> 
+<h4>FUNCTION</h4> 
+<a name="id0402b218130003"></a> 
+<h5>Malfunction detection function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The malfunction detection function detects and displays malfunctions in the input/output signal system of the DSC HU/CM when the ignition is switched ON.</p> </li> 
+<li> <p>When the DSC HU/CM is activated, the following malfunction detection is performed.</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>The ABS warning light, brake system warning light, TCS/DSC indicator light, TSC OFF indicator light, tire pressure monitoring system warning light and master warning light illuminate for<b> approx. 3.0 s</b> when the ignition is switched ON to inspect for open circuits in the lights. At the same time, the input/output signals of each part are monitored for malfunction diagnosis. After starting to drive, the first time the vehicle speed is <b>approx. 10 km/h {6.2 mph} or more</b> the pump motor is operated and malfunction diagnosis is performed again. The input/output signals of each part are then constantly monitored and malfunctions are diagnosed.</p> <p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The sound of the pump motor operation can be heard.</p> </li> 
+</ul>
+</blockquote>  
+</li> 
+</ul>
+</blockquote> 
+<li> <p>If the above malfunctions are detected, the corresponding lights are illuminated to alert the driver. DTCs can be output through the CAN_H and CAN_L of the DLC-2 using the external tester communication function. At the same time, malfunction detection results are sent to the memory and fail-safe functions.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0402b218130004"></a> 
+<h5>Memory function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The memory function stores DTCs of malfunctions in input/output signal systems. With this function, once a DTC is stored it is not cleared after the ignition has been switched off, even if the malfunctioning signal system has returned to normal.</p> </li> 
+<li> <p>Since the DSC HU/CM has a built-in non-volatile memory, DTCs are not cleared even if the battery is removed. Therefore, it is necessary to clear the memory after performing repairs. Refer to the Workshop Manual for the DTC clearing procedure.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0402b218130005"></a> 
+<h5>DTC 7-digit code definition</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>When related systems or components have failed, the CM stores the DTC of the malfunctioning part in the CM memory, and allows for the retrieval of the stored data using the scanning tool when necessary. The DTCs are indicated using seven digits. Each digit indicates the following.</p>  <p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/ac5wzn00001215.tif"><img align="absmiddle" border="0" src="../../../img.dir/ac5wzn00001215.gif"></a>
+</p>  
+</li> 
+</ul>
+</blockquote>  
+<a name="id0402b218130006"></a> 
+<h5>Fail-safe function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>When the malfunction detection function determines a malfunction, the warning indicator light illuminates to alert the driver. At this time, the fail-safe function controls as indicated in the fail-safe function malfunction contents table.</p> </li> 
+</ul>
+</blockquote> 
+<p>
+<b><font color="#254164">WARNING: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If EBD control is prohibited, the rear wheels could lock-up before the front wheels. If this occurs, the vehicle could yaw and become unstable. Therefore, always inspect the system immediately if EBD control is prohibited.</p> </li> 
+</ul>
+</blockquote>  &times;: Applicable<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">             
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DTC No.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>ABS warning light</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Brake system warning light (when parking brake is released)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TCS/DSC indicator light</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DSC OFF indicator light</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Tire pressure monitoring system warning light</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Master warning light*<sup>6</sup><sup></sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Malfunction location</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Fail-safe</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Drive cycle</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Self test type<sup>*1</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Memory function</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B11D4:08<sup>*6</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Laser sensor</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0001:01</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="10" colspan="NaN"> <p>DSC HU/CM internal malfunction (solenoid valve system-)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0003:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0010:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0011:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0014:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0015:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0018:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0019:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C001C:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C001D:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0020:01</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="6" colspan="NaN"> <p>Pump motor, motor relay</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0020:11</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0020:13</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0020:16</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0020:1C</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0020:71</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0023:62*<sup>7</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Brake light/Brake switch<sup></sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0031:01</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated<sup>*2</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>LF ABS wheel-speed sensor</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0031:13</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0031:23</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated<sup>*2</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>LF ABS wheel-speed sensor/ABS sensor rotor</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0031:27</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0034:01</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated<sup>*2</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>RF ABS wheel-speed sensor</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0034:13</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0034:23</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated<sup>*2</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>RF ABS wheel-speed sensor/ABS sensor rotor</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0034:27</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0037:01</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated<sup>*2</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>LR ABS wheel-speed sensor</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0037:13</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0037:23</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated<sup>*2</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="3" colspan="NaN"> <p>LR ABS wheel-speed sensor/ABS sensor rotor</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0037:27</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0037:62</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C003A:01</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated<sup>*2</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>RR ABS wheel-speed sensor</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C003A:13</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C003A:23</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated<sup>*2</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="3" colspan="NaN"> <p>RR ABS wheel-speed sensor/ABS sensor rotor</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C003A:27</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C003A:62</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0040:64</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>Brake light/Brake switch<sup></sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0040:86</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0044:14</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>Brake fluid pressure sensor</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0044:1C</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0044:65</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0044:66</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0044:67</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0051:67</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Steering angle signal</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0061:27</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="3" colspan="NaN"> <p>SAS control module system (lateral-G signal)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0061:28</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0061:29</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0061:54</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC HU/CM system (unperformed initialization procedure)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0061:62</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>SAS control module system (lateral-G signal)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="4" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="4" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="4" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0062:27</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="3" colspan="NaN"> <p>SAS control module system (longitudinal-G signal)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0062:28</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0062:29</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0062:54</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC HU/CM system (unperformed initialization procedure)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0062:62</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>SAS control module system (longitudinal-G signal)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0062:65</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0063:27</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="3" colspan="NaN"> <p>SAS control module system (yaw rate signal)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0063:28</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0063:29</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0063:54</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC HU/CM system (unperformed initialization procedure)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0063:61</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>SAS control module system (yaw rate signal)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0063:62</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C006A:61</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Flashes*<sup>3</sup>*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TCS/DSC control system (combined sensor)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0089:64</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC OFF switch</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C1031:35</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Tire Pressure Monitoring System (TPMS) set switch</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C1031:54</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Tire Pressure Monitoring System (TPMS) system</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C1031:68</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Tire Pressure Monitoring System  (TPMS) system</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C1A77:12</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="3" colspan="NaN"> <p>Solenoid valve relay</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C1A77:13</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C1A77:16</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:88</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>CAN line</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Flashes*<sup>3</sup>*<sup>8</sup></p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0101:00*<sup>4</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0104:00*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0131:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0151:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated<sup></sup></p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>SAS control module system (CAN2 line malfunction)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated<sup></sup>*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated*<sup>3</sup></p> </td> <td valign="middle" align="left" cellspacing="" rowspan="3" colspan="NaN"> <p>CAN line</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0214:00*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0235:00*<sup>6</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0301:00*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Flashes*<sup>3</sup>*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated*<sup>3</sup></p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Abnormal message from PCM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0305:00*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Abnormal message from Vehicle Control Module (V/C-Module)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0320:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Abnormal message from EPS CM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0323:00*<sup>6</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Abnormal message from instrument cluster</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0338:00*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Abnormal message from start stop unit</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0401:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated<sup>*3</sup></p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Abnormal message from PCM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0402:00*<sup>4</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Abnormal message from transaxle</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0405:00*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Abnormal message from Vehicle Control Module (V/C-Module)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0420:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="3" colspan="NaN"> <p>Abnormal message from EPS CM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0420:64</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0428:62</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0433:00*<sup>6</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Abnormal message from laser sensor</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0443:00*<sup>6</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Abnormal message from instrument cluster</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0515:00*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Abnormal message from start stop unit</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U2300:52</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>Configuration data not recorded/incompatible configuration data received</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="5" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U2300:54</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U2300:55</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U2300:56</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U2300:64</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U3000:4A</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC unit mismatched installation</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U3000:96</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC HU/CM (internal malfunction)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U3003:16</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Flashes*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="3" colspan="NaN"> <p>Power supply system</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Not applicable</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>C, D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U3003:17</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U3003:1C</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<dl> 
+<dt>*<sup>1</sup>
+</dt> 
+<dd>
+<b>C: CMDTC self-test, D: ODDTC self-test.</b>
+</dd> 
+<dt>*<sup>2</sup>
+</dt> 
+<dd>
+<b>Illuminates when one or two rear wheels have a malfunction.</b>
+</dd> 
+<dt>*<sup>3</sup>
+</dt> 
+<dd>
+<b>Not illuminated depending on malfunction content.</b>
+</dd> 
+<dt>*<sup>4</sup>
+</dt> 
+<dd>
+<b>ATX only.</b>
+</dd> 
+<dt>*<sup>5</sup>
+</dt> 
+<dd>
+<b>Vehicles with Mazda Radar Cruise Control (MRCC) .</b>
+</dd> 
+<dt>*<sup>6</sup>
+</dt> 
+<dd>
+<b>Vehicles with Smart City Brake Support (SCBS).</b>
+</dd> 
+<dt>*<sup>7</sup>
+</dt> 
+<dd>
+<b>Vehicles with Smart City Brake Support (SCBS) and Mazda Radar Cruise Control (MRCC).</b>
+</dd> 
+<dt>*<sup>8</sup>
+</dt> 
+<dd>
+<b>Tire pressure monitoring system warning light illuminates after flashes.</b>
+</dd> 
+</dl> 
+<b>Fail-safe Function Malfunction Contents</b>
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">            
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>DTC No.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="10"> <p>Fail-safe function</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="10"> <p>Control status</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>ABS control</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>EBD control</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Brake assist Control</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TCS Control*<sup>9</sup></p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Hill Launch Assist (HLA)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle roll prevention function control*<sup>1</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DSC Control</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Mazda Radar Cruise Control (MRCC)*<sup>1</sup></p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Smart City Brake Support (SCBS)*<sup>1</sup></p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Tire Pressure Monitoring System (TPMS)</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B11D4:08</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0001:01</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="10" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0003:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0010:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0011:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0014:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0015:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0018:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0019:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C001C:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C001D:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0020:01</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0020:11</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0020:13</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0020:16</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0020:1C</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0020:71</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0023:62</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0031:01</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="18" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="12" colspan="NaN"> <p>Control enabled*<sup>2</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="18" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="18" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="18" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="18" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="18" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="18" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="18" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="18" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0031:13</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0031:23</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0031:27</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0034:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0034:13</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0034:23</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0034:27</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0037:01</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0037:13</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0037:23</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0037:27</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0037:62</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C003A:01</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control enabled*<sup>2</sup></p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C003A:13</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C003A:23</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C003A:27</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C003A:62</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0040:64</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0040:86</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0044:14</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>Control enabled<sup></sup></p> </td> <td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="5" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0044:1C</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0044:65</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0044:66</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0044:67</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0051:67</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0061:27</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0061:28</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0061:29</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0061:54</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0061:62</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0062:27</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0062:28</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0062:29</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0062:54</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0062:62</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0062:65</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0063:27</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0063:28</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0063:29</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0063:54</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0063:61</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disable d</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0063:62</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C006A:61</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled*<sup>4</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled*<sup>4</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled*<sup>4</sup></p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C0089:64</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="10"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C1031:35</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C1031:54</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C1031:68</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C1A77:12</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C1A77:13</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C1A77:16</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0001:88</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup><sup></sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0101:00<sup>*6</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0104:00*<sup>7</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0131:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0151:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0154:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0214:00*<sup>7</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0235:00*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0301:00*<sup>7</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0305:00*<sup>7</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0320:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0323:00*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0336:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0338:00*<sup>7</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0401:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled*<sup>5</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0402:00<sup>*6</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0405:00*<sup>7</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0420:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0420:64</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0428:62</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0433:00*<sup>8</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0443:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0515:00*<sup>7</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U2300:52</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U2300:54</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="4" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U2300:55</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U2300:56</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U2300:64</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U3000:4A</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control enabled*<sup>3</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U3000:96</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="10"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U3003:16</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="3" colspan="10"> <p>Control disabled</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U3003:17</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U3003:1C</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<dl> 
+<dt>*<sup>1</sup>
+</dt> 
+<dd>
+<b>If equipped.</b>
+</dd> 
+<dt>*<sup>2</sup>
+</dt> 
+<dd>
+<b>Control which requires sensor data is inhibited. Moreover, control is disabled when one or two rear wheels have a malfunction.</b>
+</dd> 
+<dt>*<sup>3</sup>
+</dt> 
+<dd>
+<b>Control which requires sensor data is inhibited.</b>
+</dd> 
+<dt>*<sup>4</sup>
+</dt> 
+<dd>
+<b>Control disabled depending on malfunction content.</b>
+</dd> 
+<dt>*<sup>5</sup>
+</dt> 
+<dd>
+<b>Control enabled depending on malfunction content.</b>
+</dd> 
+<dt>*<sup>6</sup>
+</dt> 
+<dd>
+<b>ATX only.</b>
+</dd> 
+<dt>*<sup>7</sup>
+</dt> 
+<dd>
+<b>Vehicles with Mazda Radar Cruise Control (MRCC) .</b>
+</dd> 
+<dt>*<sup>8</sup>
+</dt> 
+<dd>
+<b>Vehicles with Smart City Brake Support (SCBS).</b>
+</dd> 
+<dt>*<sup>9</sup>
+</dt> 
+<dd>
+<b>TCS control includes brake control and engine control</b>
+</dd> 
+</dl>  
+<a name="id0402b218130007"></a> 
+<h5>Status byte for DTC</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The status byte is the two-digit code (two digits after hyphen (-)) after the DTC.</p>  <p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am5ezn00002077.tif"><img align="absmiddle" border="0" src="../../../img.dir/am5ezn00002077.gif"></a>
+</p>  
+</li> 
+<li> <p>The status byte is a code which indicates the pending code, current/past malfunction status, or warning illumination status.</p> </li> 
+<li> <p>The status byte can be read by performing a CMDTC self test using the Mazda Modular Diagnostic System (M-MDS).</p> </li> 
+<li> <p>For details on the status byte, refer to the explanation on the Mazda Modular Diagnostic System (M-MDS) when reading the DTC.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0402b218130008"></a> 
+<h5>Snapshot data</h5> 
+<p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The EPS CM stores the following two types of information when a DTC is detected and displays snap shot data in the M-MDS.</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Vehicle information detected by EPS CM</p> </li> 
+<li> <p>Vehicle information detected by instrument cluster and received by start stop unit via CAN signal</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote>  
+<blockquote>
+<ul type="disc"> 
+<li> <p>The snapshot data stores the currently detected DTC data</p> </li> 
+</ul>
+</blockquote> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">      
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Snapshot data item</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Unit</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Data contents</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Data read/use method</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Corresponding data monitor items</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>AAT</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&deg;C, &deg;F</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Ambient air temperature</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>ABS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Inactive/</p> <p>Active</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Antilock braking system</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>APP_STATUS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Accelerator Pedal Off/</p> <p>Under 20%/</p> <p>Over 20%/</p> <p>FAIL</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Accelerator pedal position</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>AYC</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Inactive/</p> <p>Active</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Active yaw control</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>BRK_F_P_R</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Pa, psi</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Brake fluid line hydraulic pressure (Raw Value)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>BRK_F_P_R</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>BRK_F_P_R</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>BTCS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Inactive/</p> <p>Active</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Brake traction control system</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>CFG_STATUS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Config Complete/</p> <p>Not Configured/</p> <p>Config Error</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Instrument cluster configuration status</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>ECT_STATUS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Under 0 degrees C/</p> <p>0 - Under 80 degrees C/</p> <p>Over 80 degrees C/</p> <p>FAIL</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Engine coolant temperature status</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>EDC</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Inactive/</p> <p>Active</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Engine drag control</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>IC_VPWR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>V</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Instrument cluster power supply</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The DSC HU/CM constantly receives the power supply voltage value of the instrument cluster sent via CAN signal from the instrument cluster.</p> </li> 
+<li> <p>If a DTC is detected, the DSC HU/CM records the power supply voltage of the instrument cluster when the DTC was detected, and it is displayed in the M-MDS.</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>VRWR<sup>*2</sup></p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>IG-ON_TIMER</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>hh:mm:ss*<sup>1</sup></p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Elapsed time since ignition was switched ON</p> <p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The instrument cluster records the elapsed time since the ignition was switched ON.</p> </li> 
+</ul>
+</blockquote>  
+</td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The DSC HU/CM constantly receives the elapsed time since the ignition was switched ON sent via CAN signal from the instrument cluster.</p> </li> 
+<li> <p>If a DTC is detected, the DSC HU/CM records the elapsed time since the ignition was switched ON when the DTC was detected, and it is displayed in the M-MDS.</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>LAT_ACCL_R</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>G</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Lateral acceleration (Raw Value)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>LAT_ACCL_R</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>LAT_ACCL_R</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>LON_ACCL_R</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>G</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Longitudinal acceleration (Raw Value)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>LON_ACCL_R</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>LON_ACCL_R</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PMP_MT</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Pump motor</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PWR_MODE_KEY</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Key Out/</p> <p>Key Recently Out/</p> <p>Key Approved (Position 0)/</p> <p>Post Accessory (Position 0)/</p> <p>Accessory (Position 1)/</p> <p>Post Ignition (Position 1)/</p> <p>Ignition On (Position 2)/</p> <p>Running (Position 2)/</p> <p>Running - Starting In Progress (Position 2)/</p> <p>Crank (Position 3)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Key Out: Ignition switched to off</p> </li> 
+<li> <p>Key Recently Out (Position 0): Elapsed time <b>within 3 s</b> since ignition was switched to off</p> </li> 
+<li> <p>Accessory (Position 1): Ignition is switched to ACC</p> </li> 
+<li> <p>Post Ignition (Position 2): Elapsed time <b>within 3 s</b> since ignition was switched ON</p> </li> 
+<li> <p>Ignition On (Position 2): Ignition switched ON (engine off)</p> </li> 
+<li> <p>Running (Position 2): Ignition switched ON (engine on)</p> </li> 
+<li> <p>Running - Starting: Cranking condition</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The DSC HU/CM constantly receives the ignition switch status sent via CAN signal from the instrument cluster.</p> </li> 
+<li> <p>If a DTC is detected, the DSC HU/CM records the ignition switch status when the DTC was detected, and it is displayed in the M-MDS.</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>RPM_STATUS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Engine Stop/</p> <p>Under 1500 rpm/</p> <p>Over 1500 rpm/</p> <p>FAIL</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Engine RPM status</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The DSC HU/CM constantly receives the ignition switch status sent via CAN signal from the instrument cluster.</p> </li> 
+<li> <p>If a DTC is detected, the DSC HU/CM records the ignition switch status when the DTC was detected, and it is displayed in the M-MDS.</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TACHOMTR<sup>*2</sup></p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>SHIFT_STATUS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P/N</p> <p>D/</p> <p>R/</p> <p>FAIL</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift position status</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The DSC HU/CM constantly receives the selector lever position sent via CAN signal from the instrument cluster.</p> </li> 
+<li> <p>If a DTC is detected, the DSC HU/CM records the selector lever position when the DTC was detected, and it is displayed in the M-MDS.</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>STR_ANG_C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&deg;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Steering wheel angle (Calculated Value)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>STR_ANG_C</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>STR_ANG_C</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TCS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Inactive/</p> <p>Active</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Traction control system</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TOTAL_DIST</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>km, ft, mi</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Accumulated total traveled distance from completion of vehicle until DSC HU/CM detects DTC (Odometer value in instrument cluster)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>The distance traveled when the DSC HU/CM detected a DTC can be calculated by performing the following procedure.</p> <blockquote>
+<ul> 
+<li> <p>Verify the odometer value in the instrument cluster.</p> </li> 
+<li> <p>Verify the snap shot data item TOTAL_DIST.</p> </li> 
+<li> <p>Subtract 2 from 1.</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TOTAL_TIME</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>hh:mm:ss*<sup>1</sup></p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Accumulated total elapsed time since vehicle completion until DSC HU/CM detects a DTC</p> <p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>When the ROOM fuse is removed, and the ignition is switched off, the time is not included in the elapsed time.</p> </li> 
+</ul>
+</blockquote>  
+</td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>The elapsed time when the DSC HU/CM detected a DTC can be calculated by performing the following procedure.</p> <blockquote>
+<ul> 
+<li> <p>Verify the PID item TOTAL_TIME of the instrument cluster.</p> </li> 
+<li> <p>Verify the snap shot data item TOTAL_TIME.</p> </li> 
+<li> <p>Subtract 2 from 1.</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Not applicable.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>VPWR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>V</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Power supply</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>VPWR</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>VPWR</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>VSPD</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>KPH, MPH</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle speed</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>VSPD</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>VSPD</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>VSPD_STATUS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Stop/</p> <p>0 - 10km/h/</p> <p>Over 10km/h/</p> <p>FAIL</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>When a DTC is detected, the DSC HU/CM receives the vehicle speed being detected by the instrument cluster via CAN signals and displays it in the M-MDS.</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The DSC HU/CM constantly receives the vehicle speed sent via CAN signal from the instrument cluster.</p> </li> 
+<li> <p>If a DTC is detected, the DSC HU/CM records the vehicle speed when the DTC was detected, and it is displayed in the M-MDS.</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SPEEDOMTR<sup>*2</sup></p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>YAW_RATE_R</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&deg;/S</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Yaw Rate (Raw Value)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>YAW_RATE_R</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>YAW_RATE_R</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<dl> 
+<dt>*<sup>1</sup>
+</dt> 
+<dd>
+<b>The seconds may be indicated after the decimal point.</b>
+</dd> 
+<dt>*<sup>2</sup>
+</dt> 
+<dd>
+<b>Instrument cluster PID.</b>
+</dd> 
+</dl>  
+<a name="id0402b218130009"></a> 
+<h5>Active command modes function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The active command modes function is used for optionally selecting simulation items of input/output parts preset in the DSC HU/CM, and to operate them regardless of CM control.</p> </li> 
+<li> <p>To protect the hydraulic unit interior, operate output related parts for only <b>2 s or less</b> when using the active command modes function.</p> </li> 
+</ul>
+</blockquote> 
+<b>Active command mode table</b>
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">     
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Command name</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Output part</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Operation</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Operating condition</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PMP_MT_SP</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Pump motor</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>Switch the ignition ON</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>V_INLET_LF</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>LF inlet solenoid valve</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>V_INLET_LR</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>LR inlet solenoid valve</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>V_INLET_RF</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>RF inlet solenoid valve</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>V_INLET_RR</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>RR inlet solenoid valve</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>V_OUTLET_LF</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>LF outlet solenoid valve</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>V_OUTLET_LR</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>LR outlet solenoid valve</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>V_OUTLET_RF</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>RF outlet solenoid valve</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>V_OUTLET_RR</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>RR outlet solenoid valve</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>V_STB_LF/RR</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>LF/RR stability control solenoid valve</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Not applicable</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>V_STB_RF/LR</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>RF/LR stability control solenoid valve</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>V_TRC_LF/RR</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>LF/RR linear control solenoid valve</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Switch the ignition ON</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>V_TRC_RF/LR</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>RF/LR linear control solenoid valve</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br>  
+<a name="id0402b218130010"></a> 
+<h5>External tester communication function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The external tester communication function enables communication of diagnostic data (DTC read-outs, input/output signal read-outs, operation of input/output parts) between the DSC HU/CM and an external tester.</p> </li> 
+</ul>
+</blockquote> 
+<b>Connections/communication contents</b>
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">    
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="3" colspan="NaN"> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="2"> <p>External tester</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="2"> <p>Mazda Modular Diagnostic System (M-MDS)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Connection</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Communication method</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>On-board diagnostic (malfunction detection) function</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Input/output: CAN_H (HS), CAN_L (HS) terminals</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Serial communication</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PID/data monitor function</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Input/output: CAN_H (HS), CAN_L (HS) terminals</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Serial communication</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Active command modes function</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Input/output: CAN_H (HS), CAN_L (HS) terminals</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Serial communication</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<blockquote>
+<ul type="disc"> 
+<b>Serial communication</b> 
+<li> <p>Serial communication (two-way communication) allows for multiple data to be sent and received instantly along the same line.</p> </li> 
+<li> <p>By connecting the Mazda Modular Diagnostic System (M-MDS) to the DLC-2, diagnostic data can be sent and received between the Mazda Modular Diagnostic System (M-MDS) and the DSC HU/CM using the CAN_H and CAN_L terminals (within the DLC-2).</p> </li> 
+<li> <p>The DSC HU/CM receives the command signals of the malfunction detection function, PID/data monitor function, and the active command modes function based on the Mazda Modular Diagnostic System (M-MDS), and sends DTCs and data regarding the operating condition and status of each input/output part to the Mazda Modular Diagnostic System (M-MDS).</p> </li> 
+</ul>
+</blockquote> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">    
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Diagnostic function name</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Signal received</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Signal sent</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Malfunction detection function</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DTC verification signal</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DTC</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PID/data monitor function</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Command signal to read selected monitor item</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Monitored data for requested monitor item</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Active command modes function</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Operation command signal for selected active command modes item</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Output part drive signal</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br>   
+<br>
+<br>
+				<a href="id040000160800.html">< Previous</a>
+			&nbsp;
+				<a href="id0402b2100700.html">Next ></a>
+			<br>
+<div align="right">
+<a href="#">Back to Top</a>
+<br>
+</div>
+<div align="center">
+<em>&copy; 2012 Mazda North American Operations, U.S.A.</em>
+</div>
+</body>
+</html>

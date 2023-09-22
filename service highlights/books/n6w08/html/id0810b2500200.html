@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:java="smconverter.ConverterUtilities">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE MEDIA="screen, projection" TYPE="text/css">@import url(../../../../../../../../Styles/wsm.css);</STYLE>
+<META name="doc.taxonomy" content="SH||Restraints||Air Bag System">
+<META name="doc.language" content="en-US">
+<META name="doc.model-year" content="MAZDA6::2014||">
+<META name="doc.category" content="Restraints">
+<title>SAS CONTROL MODULE [STANDARD DEPLOYMENT CONTROL SYSTEM]</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center">
+<IFRAME scrolling="no" frameborder="0" height="0px" width="100%" marginwidth="0" src="http://am.mazdaserviceinfo.com/service/esi/emazda/esiContent.jsp" id="headerIFrame" name="headerIFrame"></IFRAME>
+</td>
+</tr>
+</table>
+<br>
+				<a href="id0810b2500100.html">< Previous</a>
+			&nbsp;
+				<a href="id0810b2310100.html">Next ></a>
+			<br>
+<h2>2014 -                                     
+	                	Mazda6 -                    
+	                	Restraints</h2>
+<a name="id0810b2500200"></a> 
+<h3>SAS CONTROL MODULE [STANDARD DEPLOYMENT CONTROL SYSTEM]</h3>  
+<a name="id0810b250020001"></a> 
+<h4>Purpose</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The SAS control module controls the air bag system operation.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0810b250020002"></a> 
+<h4>Function</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>During a frontal collision, the SAS control module controls the following air bag module operation (deployment).</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Driver-side air bag module</p> </li> 
+<li> <p>Passenger-side air bag module</p> </li> 
+<li> <p>Driver/passenger-side pre-tensioner seat belt</p> </li> 
+<li> <p>Driver/passenger-side curtain air bag module</p> </li> 
+</ul>
+</blockquote> 
+<li> <p>During a lateral collision, the SAS control module controls the following air bag module operation (deployment).</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Side air bag module on the collision side</p> </li> 
+<li> <p>Curtain air bag module on the collision side</p> </li> 
+<li> <p>Pre-tensioner seat belt on the collision side</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If an air bag is deployed due to a vehicle collision, the SAS control module sends an air bag deployment signal to each control module.</p> </li> 
+<li> <p>When the signal is received, each control module performs the following controls to reduce secondary injuries caused by the vehicle collision.</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Rear body control module (RBCM): Collision detection unlock function (See <a href="../../n6w09/html/id091400108200.html">POWER DOOR LOCK SYSTEM</a>.)</p> </li> 
+<li> <p>Front body control module (FBCM): Secondary collision reduction (SCR) hazard warning light (See <a href="../../n6w09/html/id091800400500.html">EXTERIOR LIGHTING SYSTEM</a>.)</p> </li> 
+<li> <p>PCM: (See <a href="../../n6w01/html/id0140g0138600.html">FUEL INJECTION CONTROL SYSTEM [SKYACTIV-G 2.5]</a>.)</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+<a name="id0810b250020003"></a> 
+<h5>Backup power supply function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The backup power supply function enables the condenser to discharge and supply power to assure air bag system operation/deployment properly for a specified time even if the power supply to the SAS control module is cut due to a collision.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0810b250020004"></a> 
+<h5>Configuration function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Identifies the variation of the air bag module installed to the vehicle when replacing the SAS control module with a new one.</p> </li> 
+<li> <p>If the air bag module installed to the vehicle and the module identified by the SAS control module differ, a DTC is displayed.</p> </li> 
+<li> <p>Refer to the Workshop Manual for the configuration setting procedure.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0810b250020005"></a> 
+<h5>Yaw Rate Sensor</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The yaw rate sensor in the SAS control module detects the vehicle yaw rate (vehicle turning angle speed), and sends the detected rate to the DSC HU/CM via special CAN lines between the SAS control module and the DSC HU/CM.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0810b250020006"></a> 
+<h5>Low-G sensor</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The low-G sensor in the SAS control module detects the vehicle longitudinal accelerations, and sends the detected accelerations to the DSC HU/CM via special CAN lines between the SAS control module and the DSC HU/CM.</p> </li> 
+</ul>
+</blockquote>   
+<a name="id0810b250020007"></a> 
+<h4>Construction</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>SAS control module installed under the rear console.</p> </li> 
+<li> <p>The following sensors are built into the SAS control module.</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Crash sensor</p> </li> 
+<li> <p>Yaw rate sensor</p> </li> 
+<li> <p>Low-G sensor</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If the degree of impact detected by the crash zone sensor and the crash sensor built into the SAS control module exceeds the set value during a frontal collision to the vehicle, the SAS control module sends an operation (deployment) signal to the air bag module and the pre-tensioner seat belts.</p> </li> 
+<li> <p>If the degree of impact detected by side air bag sensor No. 1 or No. 2 and the crash sensor built into the SAS control module exceeds the set value during a side collision to the vehicle, the SAS control module sends an operation (deployment) signal to the side air bag module and curtain air bag module.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0810b250020008"></a> 
+<h4>Operation</h4> 
+<a name="id0810b250020009"></a> 
+<h5>Front Air Bag System</h5> 
+<blockquote>1.  During a frontal or frontal offset collision, the crash sensors in the crash zone sensor and the SAS control module detect the impact. </blockquote> 
+<blockquote>2.  The degree of impact detected by the crash sensor in the crash zone sensor is converted to an electrical signal and sent to the SAS control module through the signal amplification circuit. </blockquote> 
+<blockquote>3.  Simultaneously, the SAS control module crash sensor converts the degree of impact detected to an electrical signal. </blockquote> 
+<blockquote>4.  The SAS control module processes the calculations for the two electrical signals at the output control circuit and compares the value to a preset value. </blockquote> 
+<blockquote>5.  The SAS control module completes an ignition circuit for the curtain air bag module and pre-tensioner seat belts that is synchronized to the deployment of the air bag modules, and an operation signal is sent to the curtain air bag module and pre-tensioner seat belts. </blockquote>  
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6xun00001423.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6xun00001423.gif"></a>
+</p>   
+<a name="id0810b250020010"></a> 
+<h5>Side air bag system</h5> 
+<blockquote>1.  During a lateral collision to the vehicle, the crash sensors in the side air bag sensor and SAS control module detect the collision. </blockquote> 
+<blockquote>2.  The degree of impact detected by the crash sensor in the side air bag sensor is converted to an electrical signal and sent to the SAS control module through the signal amplification circuit. </blockquote> 
+<blockquote>3.  Simultaneously, the SAS control module crash sensor converts the degree of impact detected to an electrical signal. </blockquote> 
+<blockquote>4.  The SAS control module processes the calculations for the two electrical signals at the output control circuit and compares the value to a preset value. </blockquote> 
+<blockquote>5.  The output control circuit determines the degree of impact to the vehicle by the value from the crash sensors, completes a side air bag module and curtain air bag module ignition circuit, and sends the deployment signal to the air bag modules. </blockquote> 
+<blockquote>6.  The SAS control module completes an ignition circuit for the pre-tensioner seat belts that is synchronized to the deployment of the air bag modules, and an operation signal is sent to the pre-tensioner seat belts. </blockquote>  
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6xun00001655.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6xun00001655.gif"></a>
+</p>   
+<a name="id0810b250020011"></a> 
+<h5>DSC system control</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The vehicle angle speed and accelerations detected by the yaw rate and low-G sensors in the SAS control module are sent to the DSC HU/CM via special CAN lines.</p> </li> 
+<li> <p>The DSC system controls based on the signal sent from the SAS control module. For the DSC system operation, refer to the <a href="../../n6w04/html/id041500103300.html">DSC HU/CM</a>.</p> </li> 
+</ul>
+</blockquote>  
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6xun00001424.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6xun00001424.gif"></a>
+</p>    
+<a name="id0810b250020012"></a> 
+<h4>Fail-safe</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If the SAS control module performance/function cannot be maintained due to any cause, the fail-safe function stops air bag system control and flashes the air bag system warning light to prevent the air bags from operating (deploying) accidentally.</p> </li> 
+</ul>
+</blockquote>  
+<br>
+<br>
+				<a href="id0810b2500100.html">< Previous</a>
+			&nbsp;
+				<a href="id0810b2310100.html">Next ></a>
+			<br>
+<div align="right">
+<a href="#">Back to Top</a>
+<br>
+</div>
+<div align="center">
+<em>&copy; 2012 Mazda North American Operations, U.S.A.</em>
+</div>
+</body>
+</html>

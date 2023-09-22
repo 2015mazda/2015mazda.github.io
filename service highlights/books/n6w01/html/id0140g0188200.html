@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:java="smconverter.ConverterUtilities">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE MEDIA="screen, projection" TYPE="text/css">@import url(../../../../../../../../Styles/wsm.css);</STYLE>
+<META name="doc.taxonomy" content="SH||Engine||Control System">
+<META name="doc.language" content="en-US">
+<META name="doc.model-year" content="MAZDA6::2014||">
+<META name="doc.category" content="Engine">
+<title>ELECTRONIC SPARK ADVANCE CONTROL [SKYACTIV-G 2.5]</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center">
+<IFRAME scrolling="no" frameborder="0" height="0px" width="100%" marginwidth="0" src="http://am.mazdaserviceinfo.com/service/esi/emazda/esiContent.jsp" id="headerIFrame" name="headerIFrame"></IFRAME>
+</td>
+</tr>
+</table>
+<br>
+				<a href="id0140g0005600.html">< Previous</a>
+			&nbsp;
+				<a href="id0140g0203800.html">Next ></a>
+			<br>
+<h2>2014 -                                     
+	                	Mazda6 -                    
+	                	Engine</h2>
+<a name="id0140g0188200"></a> 
+<h3>ELECTRONIC SPARK ADVANCE CONTROL [SKYACTIV-G 2.5]</h3>  
+<a name="id0140g018820001"></a> 
+<h4>Outline</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Controls ignition to optimum timing according to engine operation conditions.</p> </li> 
+<li> <p>Serviceability has been improved by eliminating the necessity of ignition timing adjustment.</p> </li> 
+<li> <p>The PCM determines the engine operation conditions based on input signals from each sensor and blocks current to the ignition coils at the calculated ignition timing, causing the spark plugs to discharge (ignite) by the effect of electromagnetic mutual induction.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id0140g018820002"></a> 
+<h4>Block Diagram</h4>  
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6xun00001374.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6xun00001374.gif"></a>
+</p>   
+<a name="id0140g018820003"></a> 
+<h4>Operation</h4> 
+<a name="id0140g018820004"></a> 
+<h5>Ignition method</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The PCM energizes the ignition coils according to the ignition timing calculated from the engine operation conditions and the igniter energization time.</p> </li> 
+<li> <p>The igniter energization time (ignition coil energization time) is determined according to battery voltage and engine speed.</p> </li> 
+</ul>
+</blockquote>  
+<p align="center">Timing chart</p> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am3zzn00003421.tif"><img align="absmiddle" border="0" src="../../../img.dir/am3zzn00003421.gif"></a>
+</p>   
+<a name="id0140g018820005"></a> 
+<h5>Determination of Ignition Timing</h5> 
+<blockquote>
+<ul type="disc"> 
+<b>Division of control zones</b> 
+<li> <p>The PCM performs different ignition controls for engine starting and those other than engine starting to stabilize the engine starting.</p> </li> 
+</ul>
+</blockquote> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">    
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control zone</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Control condition</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Ignition method</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Engine start zone</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Engine speed is less than 500 rpm</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Engine starting</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Normal zone</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Engine operation except start and idling zones</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>(Cycle estimated ignition) (Determines ignition timing adding each correction to basic spark advance)</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<b>Ignition timing calculation method table</b>A: Ignition timing base, B: Correction for ignition timing<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">       
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="2" colspan="2"> <p> <b>Contents</b> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p> <b>Calculation method or determination method for ignition timing, spark advance, and correction</b> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="2"> <p>Control zone</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6xun00001375.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6xun00001375.gif"></a>
+</p> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6xun00001376.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6xun00001376.gif"></a>
+</p> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="2"> <p>Starting ignition</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Determination based on engine coolant temperature</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p> <b>Cycle estimated ignition</b> </p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p> <b>Basic spark advance</b> </p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p> <b>Set value according to engine speed and charging efficiency<sup>*</sup></b> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="6" colspan="NaN"> <p>Correction</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Engine coolant temperature spark advance correction</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Purpose: Ensures combustion stability when engine coolant temperature is low</p> <blockquote>
+<ul type="disc"> 
+<b>According to engine coolant temperature</b> 
+<li> <p>High charging efficiency<sup>*</sup>, low engine coolant temperature&rarr;large correction</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Intake air temperature correction</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Purpose: Suppresses knocking when engine intake air temperature is high</p> <blockquote>
+<ul type="disc"> 
+<b>According to engine intake air temperature and engine coolant temperature</b> 
+<li> <p>High engine intake air temperature, high engine intake air temperature&rarr;large correction</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Warm-up promotion spark retard correction</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Purpose: Activates the catalytic converter earlier</p> <blockquote>
+<ul type="disc"> 
+<b>Maximum 50 s after engine start</b> 
+<li> <p>According to engine coolant temperature&rarr;correction</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Torque reduction correction</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Purpose: Such as reduction of shift shock, traction control, or suppression of vehicle vibration</p> <blockquote>
+<ul type="disc"> 
+<b>According to torque reduction request from TCM, or DSC</b> 
+<li> <p>Large torque reduction request&rarr;large correction</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Knocking spark retard correction</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Purpose: Knocking suppression</p> <blockquote>
+<ul type="disc"> 
+<b>Acceleration when charging efficiency* volume increase (acceleration amount) is given value or more</b> 
+<li> <p>Large acceleration amount&rarr;large correction</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Valve timing correction</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Purpose: Ensures combustion stability</p> <blockquote>
+<ul type="disc"> 
+<b>When phase difference changes due to electric variable valve timing control and variable valve timing control</b> 
+<li> <p>Correction according to change in phase difference</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>B</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<dl> 
+<dt> 
+<sup>*</sup> 
+</dt> 
+<dd>
+<b>Charging efficiency is the ratio of the actual amount of intake air to the maximum air charging amount (mass volume) of the cylinder. This value increases proportionately to the increase in engine load.</b>
+</dd> 
+</dl> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If immobilizer system related information (engine start prohibited) is received from the start stop unit, the PCM stops ignition.</p> </li> 
+<li> <p>When a collision signal is received from the SAS control module, the PCM stops the ignition.</p> </li> 
+</ul>
+</blockquote>   
+<br>
+<br>
+				<a href="id0140g0005600.html">< Previous</a>
+			&nbsp;
+				<a href="id0140g0203800.html">Next ></a>
+			<br>
+<div align="right">
+<a href="#">Back to Top</a>
+<br>
+</div>
+<div align="center">
+<em>&copy; 2012 Mazda North American Operations, U.S.A.</em>
+</div>
+</body>
+</html>

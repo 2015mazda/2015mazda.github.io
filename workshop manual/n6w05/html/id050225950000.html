@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:java="smconverter.ConverterUtilities">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE MEDIA="screen, projection" TYPE="text/css">@import url(../../../../../../../../Styles/wsm.css);</STYLE>
+<META name="doc.taxonomy" content="SM||Transmission/Transaxle||On-Board Diagnostics">
+<META name="doc.language" content="en-US">
+<META name="doc.model-year" content="MAZDA6::2014||">
+<META name="doc.category" content="Transmission/Transaxle">
+<title>ON-BOARD DIAGNOSTIC TEST MODE [FW6A-EL]</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center">
+<IFRAME scrolling="no" frameborder="0" height="0px" width="100%" marginwidth="0" src="http://am.mazdaserviceinfo.com/service/esi/emazda/esiContent.jsp" id="headerIFrame" name="headerIFrame"></IFRAME>
+</td>
+</tr>
+</table>
+<br>
+				<a href="id050225290100.html">< Previous</a>
+			&nbsp;
+				<a href="id050225290200.html">Next ></a>
+			<br>
+<h2>2014 -                                     
+	                	Mazda6 -                    
+	                	Transmission/Transaxle</h2>
+<a name="id050225950000"></a> 
+<h3>ON-BOARD DIAGNOSTIC TEST MODE [FW6A-EL]</h3>  
+<a name="id05022595000001"></a> 
+<h4>Foreword</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The on-board diagnostic mode is used to diagnose a malfunction in the automatic transaxle based on the sensor signal obtained at that time by forcibly operating each solenoid and selecting each gear.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If a problem with the automatic transaxle is identified, perform the on-board diagnostic.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>When DTCs are displayed by the on-board diagnosis test, perform the instructions in the applicable DTC troubleshooting.</p> </li> 
+</ul>
+</blockquote>  
+<p>
+<b><font color="#254164">WARNING: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The on-board diagnosis test forcibly changes gears within the driving shift range while the engine is running. Before implementing the on-board diagnosis test, securely apply the parking brake and set the wheel blocks for both the front and rear wheels. Otherwise, the vehicle will move which could cause injury or property damage.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Perform the DTC inspection using the M-MDS before performing on-board diagnostic because the DTC is cleared by performing the on-board diagnostic.</p> </li> 
+</ul>
+</blockquote>  
+<p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The time required to perform the diagnostic is <b>2 to 3 min</b>.</p> </li> 
+<li> <p>If unsafe actions such as shift operation and brake pedal release are detected before the shift position indicator light flashes, the on-board diagnostic test mode is canceled and the shift position indicator light flashes 5 times.</p> </li> 
+</ul>
+</blockquote>  
+<p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<b>There are two types of automatic transaxle shift mechanisms.</b> 
+<li> <p>Type A: Gate-shaped key type. There is no lock release button on the selector lever knob.</p> </li> 
+<li> <p>Type B: Gate-shaped straight type. There is a lock release button on the selector lever knob.</p> </li> 
+</ul>
+</blockquote>  
+<blockquote>1.  Apply the parking brake firmly, and set the wheel blocks for both the front and rear wheels. </blockquote> 
+<blockquote>2.  Inspect the ATF level. (See <a href="id0517h1118500.html">AUTOMATIC TRANSAXLE FLUID (ATF) INSPECTION [FW6A-EL]</a>.) </blockquote> 
+<blockquote>3.  Connect the M-MDS to the DLC-2. </blockquote> 
+<blockquote>4.  Perform vehicle identification using the M-MDS. </blockquote> 
+<blockquote>5.  Start the engine. </blockquote> 
+<blockquote>6.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS. <blockquote>a.  Select &ldquo;Data Logger&rdquo;. </blockquote> 
+<blockquote>b.  Select &ldquo;Modules&rdquo;. </blockquote> 
+<blockquote>c.  Select &ldquo;TCM&rdquo;. </blockquote> 
+</blockquote> 
+<blockquote>7.  While checking the PID TFT (ATF temperature), warm-up the engine completely and allow the ATF temperature to reach <b>55 &deg;C {131 &deg;F} or more</b>. </blockquote> 
+<blockquote>8.  Select the following items from the initialization screen of the M-MDS. <blockquote>a.  Select &ldquo;Self Test&rdquo;. </blockquote> 
+<blockquote>b.  Select &ldquo;Modules&rdquo;. </blockquote> 
+<blockquote>c.  Select &ldquo;TCM&rdquo;. </blockquote> 
+<blockquote>d.  Select &ldquo;Retrieve CMDTCs&rdquo;. </blockquote> 
+</blockquote> 
+<blockquote>9.  Perform the following steps (1) to (5) with the brake pedal depressed.  <p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SM/2014/Mazda6/n6/img.dir/ac5wzw00004044.tif"><img align="absmiddle" border="0" src="../../../img.dir/ac5wzw00004044.gif"></a>
+</p>  
+<p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If the on-board diagnosis test is shut down (Shift position indicator light flashes 5 times), resume the procedure from Step 1.</p> </li> 
+</ul>
+</blockquote>  
+<blockquote>a.  Shift the selector lever to the R position.  <p align="center">Type A</p> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SM/2014/Mazda6/n6/img.dir/am3uuw00008753.tif"><img align="absmiddle" border="0" src="../../../img.dir/am3uuw00008753.gif"></a>
+</p>   
+<p align="center">Type B</p> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SM/2014/Mazda6/n6/img.dir/am6zzw00012115.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6zzw00012115.gif"></a>
+</p>  
+</blockquote> 
+<blockquote>b.  Clear DTCs using the M-MDS and verify that the shift position indicator light flashes 2 times. (See <a href="id050225290100.html">ON-BOARD DIAGNOSTIC SYSTEM DTC INSPECTION [FW6A-EL]</a>.)  <p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SM/2014/Mazda6/n6/img.dir/ac5wzw00002393.tif"><img align="absmiddle" border="0" src="../../../img.dir/ac5wzw00002393.gif"></a>
+</p>  
+</blockquote> 
+<blockquote>c.  Within <b>5 s</b> after the shift position indicator light flashes 2 times, shift the selector lever to the N position and verify that the shift position indicator light flashes 2 times.  <p align="center">Type A</p> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SM/2014/Mazda6/n6/img.dir/ac5wzw00002394.tif"><img align="absmiddle" border="0" src="../../../img.dir/ac5wzw00002394.gif"></a>
+</p>   
+<p align="center">Type B</p> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SM/2014/Mazda6/n6/img.dir/am6zzw00012116.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6zzw00012116.gif"></a>
+</p>  
+</blockquote> 
+<blockquote>d.  Within <b>5 s</b> after the shift position indicator light flashes 2 times, shift the selector lever to the D position and verify that the shift position indicator light flashes 3 times.  <p align="center">Type A</p> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SM/2014/Mazda6/n6/img.dir/ac5wzw00002395.tif"><img align="absmiddle" border="0" src="../../../img.dir/ac5wzw00002395.gif"></a>
+</p>   
+<p align="center">Type B</p> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SM/2014/Mazda6/n6/img.dir/am6zzw00012117.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6zzw00012117.gif"></a>
+</p>  
+<p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p> <b>Approx. 30 s</b> is required until the shift position indicator light flashes. In addition, shift shock occurs a few times during stand-by.</p> </li> 
+</ul>
+</blockquote>  
+</blockquote> 
+<blockquote>e.  After the shift position indicator light flashes 3 times, shift the selector lever to the P position.  <p align="center">Type A</p> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SM/2014/Mazda6/n6/img.dir/am3uuw00008757.tif"><img align="absmiddle" border="0" src="../../../img.dir/am3uuw00008757.gif"></a>
+</p>   
+<p align="center">Type B</p> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SM/2014/Mazda6/n6/img.dir/am6zzw00012118.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6zzw00012118.gif"></a>
+</p>  
+</blockquote> 
+</blockquote> 
+<blockquote>10.  Release the brake pedal. </blockquote> 
+<blockquote>11.  Perform the DTC inspection using the M-MDS. (See <a href="id050225290100.html">ON-BOARD DIAGNOSTIC SYSTEM DTC INSPECTION [FW6A-EL]</a>.) <blockquote>
+<ul type="disc"> 
+<li> <p>If any DTCs are displayed, perform troubleshooting according to the corresponding DTC inspection. (See <a href="id050225290100.html">ON-BOARD DIAGNOSTIC SYSTEM DTC INSPECTION [FW6A-EL]</a>.)</p> </li> 
+</ul>
+</blockquote> 
+</blockquote> 
+<br>
+<br>
+				<a href="id050225290100.html">< Previous</a>
+			&nbsp;
+				<a href="id050225290200.html">Next ></a>
+			<br>
+<div align="right">
+<a href="#">Back to Top</a>
+<br>
+</div>
+<div align="center">
+<em>&copy; 2012 Mazda North American Operations, U.S.A.</em>
+</div>
+</body>
+</html>

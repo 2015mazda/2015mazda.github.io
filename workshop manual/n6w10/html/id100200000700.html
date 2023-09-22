@@ -1,0 +1,786 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:java="smconverter.ConverterUtilities">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE MEDIA="screen, projection" TYPE="text/css">@import url(../../../../../../../../Styles/wsm.css);</STYLE>
+<META name="doc.taxonomy" content="SM||Multiplex Communication System||On-Board Diagnostics">
+<META name="doc.language" content="en-US">
+<META name="doc.model-year" content="MAZDA6::2014||">
+<META name="doc.category" content="Multiplex Communication System">
+<title>DETERMINING SHORT TO POWER SUPPLY LOCATION (HS-CAN)</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center">
+<IFRAME scrolling="no" frameborder="0" height="0px" width="100%" marginwidth="0" src="http://am.mazdaserviceinfo.com/service/esi/emazda/esiContent.jsp" id="headerIFrame" name="headerIFrame"></IFRAME>
+</td>
+</tr>
+</table>
+<br>
+				<a href="id100200000600.html">< Previous</a>
+			&nbsp;
+				<a href="id100200000800.html">Next ></a>
+			<br>
+<h2>2014 -                                     
+	                	Mazda6 -                    
+	                	Multiplex Communication System</h2>
+<a name="id100200000700"></a> 
+<h3>DETERMINING SHORT TO POWER SUPPLY LOCATION (HS-CAN)</h3>  
+<p>
+<b><font color="#254164">CAUTION: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Perform the following malfunction diagnosis only when it is diagnosed with a short to power supply by <a href="id100200000100.html">CONTROLLER AREA NETWORK (CAN) MALFUNCTION DIAGNOSIS FLOW</a>.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id10020000070001"></a> 
+<h4>System wiring diagram</h4>  
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SM/2014/Mazda6/n6/img.dir/am6zzw00009651.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6zzw00009651.gif"></a>
+</p>   
+<a name="id10020000070002"></a> 
+<h4>Determination procedure</h4> 
+<p>
+<b><font color="#254164">CAUTION: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>When disconnecting the connector, verify that there is no looseness, damage, deformation, corrosion, or poor connection of the connector terminals.</p> </li> 
+<li> <p>When inspecting the DLC-2, touch it with a paper clip or similar thin pin without directly inserting a tester into the terminals.</p> </li> 
+<li> <p>Disconnect the negative battery cable before performing any work that requires handling of connectors.</p> </li> 
+</ul>
+</blockquote>  
+<p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If the ignition does not turn on even if the ignition is switched ON, switch the ignition ON referring to the forced ignition ON procedure. (See <a href="../../n6w09/html/id092100802500.html">FORCED IGNITION ON</a>.)</p> </li> 
+</ul>
+</blockquote>  
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">     
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Step</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="2"> <p>Inspection</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Action</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>1</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT FOR SHORT TO POWER SUPPLY BETWEEN FRONT BODY CONTROL MODULE (FBCM) AND INSTRUMENT CLUSTER</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect connector 2 which has front body control module (FBCM) terminals 2K and 2I</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 &mdash; 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 4.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>2</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN AFS CONTROL MODULE AND FRONT BODY CONTROL MODULE (FBCM) FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage at AFS control module terminals AB and AD.</p> </li> 
+<li> <p>Is the voltage between 1.5 &mdash; 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 34.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>3</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT AFS CONTROL MODULE FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect the AFS control module connector.</p> </li> 
+<li> <p>Connect connector 2 which has front body control module (FBCM) terminals 2K and 2I</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 &mdash; 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Replace the AFS control module because there is a short to the power supply in the AFS control module.</p> <p>(See <a href="../../n6w09/html/id091800112300.html">ADAPTIVE FRONT LIGHTING SYSTEM (AFS) CONTROL MODULE REMOVAL/INSTALLATION</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between AFS control module and the front body control module (FBCM) because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>4</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN CONNECTOR C-04 AND INSTRUMENT CLUSTER FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect connector C-04.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 &mdash; 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between the front body control module (FBCM) and connector C-04 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>5</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN CONNECTORS C-49 AND C-50 AND INSTRUMENT CLUSTER FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect connectors C-49 and C-50.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 10.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>6</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN VEHICLE CONTROL MODULE (V/C-MODULE) / DC-DC CONVERTER (i-ELOOP) AND CONNECTORS C-49 AND C-50 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage at vehicle control module (V/C-module) terminals S and U. (with smart brake support)</p> </li> 
+<li> <p>Measure the voltage at DC-DC converter (i-ELOOP) terminals 1A and 1C. (with i-ELOOP system)</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between connector C-04 and connectors C-49 and C-50 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>7</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN VEHICLE CONTROL MODULE (V/C-MODULE) AND CONNECTORS C-49 AND C-50 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage at vehicle control module (V/C-module) terminals S and U.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 9.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>8</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT VEHICLE CONTROL MODULE (V/C-MODULE) FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Connect connectors C-49 and C-50.</p> </li> 
+<li> <p>Disconnect the vehicle control module (V/C-module) connector.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Replace the vehicle control module (V/C-module) because there is a short to the power supply in the vehicle control module (V/C-module).</p> <p>(See <a href="../../n6w01/html/id0120g0000700.html">VEHICLE CONTROL MODULE (V/C-MODULE) INSPECTION [MAZDA RADAR CRUISE CONTROL (MRCC) SYSTEM]</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between the vehicle control module (V/C-module) and connectors C-49 and C-50 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>9</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT DC-DC CONVERTER (i-ELOOP) FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Connect connectors C-49 and C-50.</p> </li> 
+<li> <p>Disconnect the DC-DC converter (i-ELOOP) connector.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Replace the DC-DC converter (i-ELOOP) because there is a short to the power supply in the DC-DC converter (i-ELOOP).</p> <p>(See <a href="../../n6w13/html/id131704009100.html">DC-DC CONVERTER REMOVAL/INSTALLATION [i-ELOOP]</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between the DC-DC converter (i-ELOOP) and connectors C-49 and C-50 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>10</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN CONNECTORS C-51 AND C-52 AND INSTRUMENT CLUSTER FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect connectors C-51 and C-52.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 14.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>11</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN POSITION MEMORY CONTROL MODULE AND CONNECTORS C-51 AND C-52 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage at position memory control module terminals 1C and 1E.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between connectors C-49 and C-50 and connectors C-51 and C-52 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>12</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN POSITION MEMORY CONTROL MODULE AND CONNECTOR C-55 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect connector C-55.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at position memory control module terminals 1C and 1E.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between connector C-55 and connectors C-51 and C-52 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>13</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT POSITION MEMORY CONTROL MODULE FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Connect connector C-51 and C-52.</p> </li> 
+<li> <p>Connect connector C-55.</p> </li> 
+<li> <p>Disconnect the position memory connector.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Replace the position memory control module because there is a short to the power supply in the position memory control module.</p> <p>(See <a href="../../n6w09/html/id091300800200.html">FRONT SEAT REMOVAL/INSTALLATION</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between the position memory control module and connector C-55 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>14</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN CONNECTOR C-10 AND INSTRUMENT CLUSTER FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect connector C-10.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between connectors C-51 and C-52 and connector C-10 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>15</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN CONNECTOR C-11 AND INSTRUMENT CLUSTER FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect connector C-11.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 22.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>16</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN CONNECTOR C-11 AND LASER SENSOR / FORWARD SENSING CAMERA FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage at laser sensor terminals D and C (with smart city brake support).</p> </li> 
+<li> <p>Measure the voltage at the forward sensing camera terminals E and C (with forward sensing camera).</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between connector C-10 and connector C-11 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>17</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN LASER SENSOR AND CONNECTOR C-42 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect connector C-42.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at laser sensor terminals D and C.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 19.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>18</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT LASER SENSOR FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect the laser sensor connector.</p> </li> 
+<li> <p>Connect connector C-42.</p> </li> 
+<li> <p>Connect connector C-11.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Replace the laser sensor because there is a short to the power supply in the laser sensor.</p> <p>(See <a href="../../n6w04/html/id041500802600.html">LASER SENSOR REMOVAL/INSTALLATION</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between the laser sensor and connector C-42 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>19</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN FORWARD SENSING CAMERA AND CONNECTOR C-42 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage at forward sensing camera terminals E and C.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between connector C-11 and connector C-42 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>20</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN CONNECTOR C-27 AND FORWARD SENSING CAMERA FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect connector C-27.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at the forward sensing camera terminals E and C.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between connector C-42 and connector C-27 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>21</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT FORWARD SENSING CAMERA FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect the forward sensing camera connector.</p> </li> 
+<li> <p>Connect connector C-42.</p> </li> 
+<li> <p>Connect connector C-11.</p> </li> 
+<li> <p>Connect connector C-27.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Replace the forward sensing camera because there is a short to the power supply in the forward sensing camera.</p> <p>(See <a href="../../n6w09/html/id092200028600.html">FORWARD SENSING CAMERA (FSC) REMOVAL/INSTALLATION</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between the forward sensing camera and connector C-27 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>22</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN CONNECTOR C-34 AND DLC-2 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect connector C-34.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage 0 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between connector C-34 and DLC-2 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>23</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN EPS CONTROL MODULE AND CONNECTOR C-34 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage at EPS control module terminals 2A and 2D.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 25.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>24</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT EPS CONTROL MODULE FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Connect connector C-34.</p> </li> 
+<li> <p>Disconnect the EPS control module connector.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals E and F.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Replace the EPS control module because there is a short to the power supply in the EPS control module.</p> <p>(See <a href="../../n6w06/html/id061300801400.html">STEERING WHEEL AND COLUMN REMOVAL/INSTALLATION</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between the EPS control module and connector C-34 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>25</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN CONNECTOR C-34 AND INSTRUMENT CLUSTER FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage at instrument cluster terminals B and D.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between the connector C-11 and connector C-34 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>26</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN START STOP UNIT AND CONNECTOR C-35 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Connect connector C-35.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at start stop unit terminals 2M and 2O.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 28.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>27</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT START STOP UNIT FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Connect connector C-35.</p> </li> 
+<li> <p>Connect connector C-34.</p> </li> 
+<li> <p>Disconnect the start stop unit connector.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals E and F.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Replace the start stop unit because there is a short to the power supply in the start stop unit.</p> <p>(See <a href="../../n6w09/html/id091400110300.html">START STOP UNIT REMOVAL/INSTALLATION</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between the start stop unit and connector C-35 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>28</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN AUDIO AMPLIFIER AND CONNECTOR C-35 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage at audio amplifier terminals 2L and 2N.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 30.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>29</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT AUDIO AMPLIFIER FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Connect connector C-35.</p> </li> 
+<li> <p>Connect connector C-34.</p> </li> 
+<li> <p>Disconnect the audio amplifier connector.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals E and F.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Replace the audio amplifier because there is a short to the power supply in the audio amplifier.</p> <p>(See <a href="../../n6w09/html/id092000801100.html">AUDIO AMPLIFIER REMOVAL/INSTALLATION</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between the audio amplifier and connector C-35 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>30</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN INSTRUMENT CLUSTER AND CONNECTOR C-35 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage at instrument cluster terminals B and D.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 32.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>31</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT INSTRUMENT CLUSTER FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Connect connector C-35.</p> </li> 
+<li> <p>Connect connector C-34.</p> </li> 
+<li> <p>Disconnect the instrument cluster connector.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Replace the instrument cluster because there is a short to the power supply in the instrument cluster.</p> <p>(See <a href="../../n6w09/html/id092200010300.html">INSTRUMENT CLUSTER REMOVAL/INSTALLATION</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between the instrument cluster and connector C-35 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>32</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN SAS CONTROL MODULE AND CONNECTOR C-35 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect the SAS control module connector.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at SAS control module terminals 3K and 3L (wiring harness side).</p> </li> 
+<li> <p>Is the voltage 0 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between the SAS control module and connector C-35 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>33</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN CONNECTOR C-34 AND CONNECTOR C-35 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Connect connector C-35.</p> </li> 
+<li> <p>Connect connector C-34.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 - 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Replace the SAS control module because there is a short to the power supply in the SAS control module.</p> <p>(See <a href="../../n6w08/html/id0810b1801400.html">SAS CONTROL MODULE REMOVAL/INSTALLATION [TWO-STEP DEPLOYMENT CONTROL SYSTEM]</a>.)</p> <p>(See <a href="../../n6w08/html/id0810b2801400.html">SAS CONTROL MODULE REMOVAL/INSTALLATION [STANDARD DEPLOYMENT CONTROL SYSTEM]</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between connector C-34 and connector C-35 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>34</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN PCM AND FRONT BODY CONTROL MODULE (FBCM) FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure voltage at PCM terminals 2AK and 2AL.</p> </li> 
+<li> <p>Is the voltage between 1.5 &mdash; 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Replace the front body control module (FBCM) because there is a short to the power supply in the front body control module (FBCM).</p> <p>(See <a href="../../n6w09/html/id094000001900.html">FRONT BODY CONTROL MODULE (FBCM) REMOVAL/INSTALLATION</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>35</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN CONNECTOR C-01 AND FRONT BODY CONTROL MODULE (FBCM) FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect connector C-01.</p> </li> 
+<li> <p>Connect connector 2 which has front body control module (FBCM) terminals 2K and 2I.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 &mdash; 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between connector C-01 and the front body control module (FBCM) because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>36</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN TCM AND CONNECTOR C-01 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage at TCM terminals E and F.</p> </li> 
+<li> <p>Is the voltage between 1.5 &mdash; 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 38.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>37</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT TCM FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Connect connector C-01.</p> </li> 
+<li> <p>Disconnect the TCM connector.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 &mdash; 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Replace the TCM because there is a short to the power supply in the TCM.</p> <p>(See <a href="../../n6w05/html/id0517h1118000.html">CONTROL VALVE BODY REMOVAL/INSTALLATION [FW6A-EL]</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between the TCM and connector C-01 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>38</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN CONNECTOR C-32 AND CONNECTOR C-01 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Disconnect connector C-32.</p> </li> 
+<li> <p>Connect connector C-01.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 &mdash; 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between connector C-32 and connector C-01 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>39</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN LINE BETWEEN DSC HU/CM AND CONNECTOR C-32 FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure voltage at DSC HU/CM terminals E and D.</p> </li> 
+<li> <p>Is the voltage between 1.5 &mdash; 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 41.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>40</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT DSC HU/CM FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Connect connector C-32.</p> </li> 
+<li> <p>Disconnect the DSC HU/CM connector.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 &mdash; 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Replace the DSC HU/CM because there is a short to the power supply in the DSC HU/CM.</p> <p>(See <a href="../../n6w04/html/id041500801000.html">DSC HU/CM REMOVAL/INSTALLATION</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between the DSC HU/CM and connector C-32 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>41</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT PCM FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition off (LOCK).</p> </li> 
+<li> <p>Disconnect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Connect connector C-32.</p> </li> 
+<li> <p>Disconnect the PCM connector.</p> </li> 
+<li> <p>Connect the negative battery cable.</p> <p>(See <a href="../../n6w01/html/id0117h8800800.html">NEGATIVE BATTERY CABLE DISCONNECTION/CONNECTION [SKYACTIV-G 2.5]</a>.)</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Measure the voltage at DLC-2 terminals F and E.</p> </li> 
+<li> <p>Is the voltage between 1.5 &mdash; 3.5 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Replace the PCM because there is a short to the power supply in the PCM.</p> <p>(See <a href="../../n6w01/html/id0140g0802400.html">PCM REMOVAL/INSTALLATION [SKYACTIV-G 2.5]</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Repair or replace the wiring harness between the PCM and connector C-32 because the wiring harness is shorted to the power supply.</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br>  
+<br>
+<br>
+				<a href="id100200000600.html">< Previous</a>
+			&nbsp;
+				<a href="id100200000800.html">Next ></a>
+			<br>
+<div align="right">
+<a href="#">Back to Top</a>
+<br>
+</div>
+<div align="center">
+<em>&copy; 2012 Mazda North American Operations, U.S.A.</em>
+</div>
+</body>
+</html>

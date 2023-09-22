@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:java="smconverter.ConverterUtilities">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE MEDIA="screen, projection" TYPE="text/css">@import url(../../../../../../../../Styles/wsm.css);</STYLE>
+<META name="doc.taxonomy" content="SM||Multiplex Communication System||On-Board Diagnostics">
+<META name="doc.language" content="en-US">
+<META name="doc.model-year" content="MAZDA6::2014||">
+<META name="doc.category" content="Multiplex Communication System">
+<title>CONTROLLER AREA NETWORK (CAN) MALFUNCTION DIAGNOSIS FLOW</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center">
+<IFRAME scrolling="no" frameborder="0" height="0px" width="100%" marginwidth="0" src="http://am.mazdaserviceinfo.com/service/esi/emazda/esiContent.jsp" id="headerIFrame" name="headerIFrame"></IFRAME>
+</td>
+</tr>
+</table>
+<br>
+				<a href="id100200000000.html">< Previous</a>
+			&nbsp;
+				<a href="id100200000200.html">Next ></a>
+			<br>
+<h2>2014 -                                     
+	                	Mazda6 -                    
+	                	Multiplex Communication System</h2>
+<a name="id100200000100"></a> 
+<h3>CONTROLLER AREA NETWORK (CAN) MALFUNCTION DIAGNOSIS FLOW</h3>  
+<blockquote>
+<ul type="disc"> 
+<li> <p>If there is any vehicle malfunction complaint lodged by a customer, refer to "<a href="id100200000000.html">FOREWORD</a>" and perform CAN malfunction diagnosis following the steps in the troubleshooting procedure.</p> </li> 
+</ul>
+</blockquote> 
+<a name="id10020000010001"></a> 
+<h4>CAN malfunction diagnosis flow</h4> 
+<p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The flowchart and the diagnosis flow of the diagnosis procedure are the same thing, and the detailed procedure of the flowchart is the diagnosis procedure.</p> </li> 
+<li> <p>The step numbers in the flowchart indicate the step numbers of the diagnosis procedure.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id10020000010002"></a> 
+<h5>Flowchart</h5>  
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SM/2014/Mazda6/n6/img.dir/am6xuw00006658.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6xuw00006658.gif"></a>
+</p>   
+<a name="id10020000010003"></a> 
+<h5>Diagnostic procedure</h5> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">     
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Step</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="2"> <p>Inspection</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Action</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>1</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT IF COMMUNICATION BETWEEN M-MDS AND PCM IS POSSIBLE</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Connect the M-MDS to the DLC-2.</p> </li> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Perform vehicle identification.</p> </li> 
+<li> <p>Can the vehicle be identified?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 5 as a malfunction in the HS-CAN circuit has occurred.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>2</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT MODULE FOR INABILITY TO COMMUNICATE DUE TO CAN MALFUNCTION</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Implement the network test using the M-MDS.</p> <p>(See <a href="id100200000200.html">NETWORK TEST</a>.)</p> </li> 
+<li> <p>Is there a module indicating a malfunction?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 12 as a malfunction in the CAN circuit has occurred.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>3</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT FOR SHORT TO POWER SUPPLY IN CAN_H SIDE OF MS-CAN OR HS-CAN</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage between the following terminals:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Between DLC-2 terminal F (CAN_H side of HS CAN) and body ground</p> </li> 
+<li> <p>Between DLC-2 terminal L (CAN_H side of MS CAN) and body ground</p> </li> 
+</ul>
+</blockquote> 
+<li> <p>Is B+ voltage measured between any of the terminals?</p> <p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If a short to power supply other than the B+ power supply has occurred, a constant voltage other than B+ can be measured.</p> </li> 
+</ul>
+</blockquote>  
+</li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>A short to power supply in the CAN_H side of MS-CAN or HS-CAN.</p> <p>Determine the location of the short to power supply according to the diagnosis procedure for determining the location of a short to power supply.</p> <p>(See <a href="id100200000700.html">DETERMINING SHORT TO POWER SUPPLY LOCATION (HS-CAN)</a>.)</p> <p>(See <a href="id100200001000.html">DETERMINING SHORT TO POWER SUPPLY LOCATION (MS-CAN)</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>4</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT FOR SHORT TO GROUND IN CAN_L SIDE OF HS-CAN OR MS-CAN</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage between the following terminals:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Between DLC-2 terminal E (CAN_L side of HS-CAN) and ground</p> </li> 
+<li> <p>Between DLC-2 terminal K (CAN_L side of MS-CAN) and ground</p> </li> 
+</ul>
+</blockquote> 
+<li> <p>Is the voltage measured as 0 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>A short to ground on the CAN_L side of the HS-CAN or MS-CAN has occurred.</p> <p>Determine the location of the short to ground according to the diagnosis procedure for determining the location of a short to ground.</p> <p>(See <a href="id100200000600.html">DETERMINING SHORT TO GROUND LOCATION (HS-CAN)</a>.)</p> <p>(See <a href="id100200000900.html">DETERMINING SHORT TO GROUND LOCATION (MS-CAN)</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>The current CAN circuit is normal, return to FOREWARD, and go to the next step of the CAN malfunction diagnosis in the troubleshooting procedure.</p> <p>(See <a href="id100200000000.html">FOREWORD</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>5</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>VERIFY IF PUSH BUTTON START SYSTEM HAS MALFUNCTION</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Can the ignition be switched ON?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>A malfunction in the push button start system has occurred.</p> <p>Perform diagnosis according to the symptom troubleshooting.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>6</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT FOR MALFUNCTION IN M-MDS</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Connect the M-MDS to a normal vehicle and implement vehicle identification.</p> </li> 
+<li> <p>Can the vehicle be identified?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>A malfunction in the M-MDS can be considered.</p> <p>Repair the M-MDS.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>7</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT HS-CAN FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage between the following terminals:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Between DLC-2 terminal F (CAN_H side) and body ground</p> </li> 
+<li> <p>Between DLC-2 terminal E (CAN_L side) and body ground</p> </li> 
+</ul>
+</blockquote> 
+<li> <p>Is B+ voltage measured between any of the terminals?</p> <p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If a short to power supply other than the B+ power supply has occurred, a constant voltage other than B+ can be measured.</p> </li> 
+</ul>
+</blockquote>  
+</li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>A short to power supply in the CAN_H side or CAN_L of HS-CAN has occurred.</p> <p>Determine the location of the short to power supply according to the diagnosis procedure for determining the location of a short to power supply.</p> <p>(See <a href="id100200000700.html">DETERMINING SHORT TO POWER SUPPLY LOCATION (HS-CAN)</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>8</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT HS-CAN FOR OPEN CIRCUIT</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage between the following terminals:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Between DLC-2 terminal F (CAN_H side) and body ground</p> </li> 
+<li> <p>Between DLC-2 terminal E (CAN_L side) and body ground</p> </li> 
+</ul>
+</blockquote> 
+<li> <p>Is the voltage between both terminals (CAN_H side and CAN_L side) equal?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to Step 11 as a short to ground or a short between circuits has occurred in the HS-CAN.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>9</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>DETERMINE IF OPEN CIRCUIT LOCATION IN HS-CAN CIRCUIT IS BETWEEN DLC AND CONNECTOR C-34 OR ELSEWHERE</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Start the engine to verify that the immobilizer system operates normally.</p> </li> 
+<li> <p>Can the engine be started?</p> <p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If there is an open circuit in the wiring harness between the PCM and the start stop unit, the engine cannot be started because the key ID number verification for the immobilizer system is performed by CAN communication.</p> </li> 
+</ul>
+</blockquote>  
+</li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>An open circuit has occurred between the PCM and connector C-34 in the HS-CAN.</p> <p>Determine the location of the open circuit according to the diagnosis procedure for determining the location of an open circuit.</p> <p>(See <a href="id100200000400.html">DETERMINING OPEN CIRCUIT LOCATION (HS-CAN)</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>10</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>DETERMINE IF OPEN CIRCUIT LOCATION IN HS-CAN CIRCUIT IS BETWEEN DLC AND CONNECTOR C-34 OR ELSEWHERE</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Switch the ignition ON (engine off).</p> </li> 
+<li> <p>Verify if the check engine light in the instrument cluster illuminates.</p> </li> 
+<li> <p>Start the engine.</p> </li> 
+<li> <p>Verify if the check engine light turns off.</p> </li> 
+<li> <p>Does the check engine light turn off?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>An open circuit between DLC-2 and connector C-34 has occurred.</p> <p>Repair or replace the wiring harness for an open circuit, then return to Step 1.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>An open circuit has occurred between the PCM and connector C-34 in the HS-CAN.</p> <p>Determine the location of the open circuit according to the diagnosis procedure for determining the location of an open circuit.</p> <p>(See <a href="id100200000400.html">DETERMINING OPEN CIRCUIT LOCATION (HS-CAN)</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>11</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>VERIFY MALFUNCTION OCCURRED IN HS-CAN CIRCUIT</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage between the following terminals:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Between DLC-2 terminal F (CAN_H side) and body ground</p> </li> 
+<li> <p>Between DLC-2 terminal E (CAN_L side) and body ground</p> </li> 
+</ul>
+</blockquote> 
+<li> <p>Is the voltage between both terminals (CAN_H side and CAN_L side) 0 V?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>A short to ground in CAN_H side of HS-CAN has occurred.</p> <p>Determine the location of the short to ground according to the diagnosis procedure for determining the location of a short to ground.</p> <p>(See <a href="id100200000600.html">DETERMINING SHORT TO GROUND LOCATION (HS-CAN)</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>A short between circuits in the CAN_H side and the CAN_L side of HS-CAN has occurred.</p> <p>Determine the location of the short between circuits according to the diagnosis procedure for determining the location of a short between circuits.</p> <p>(See <a href="id100200000800.html">DETERMINING SHORT BETWEEN CIRCUITS LOCATION (HS-CAN)</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>12</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>DETERMINE CAN COMMUNICATION SPECIFICATION IN WHICH MALFUNCTION OCCURS</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Refer to the CAN communication specification quick reference table and verify the CAN communication specification (HS-CAN or MS-CAN) that is connected to the module which is indicating a malfunction.</p> <p>(See <a href="#id10020000010004">CAN communication specification quick reference table</a>.)</p> </li> 
+<li> <p>Is the module that is indicating a malfunction HS-CAN?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>An open circuit in the HS-CAN has occurred.</p> <p>Determine the location of the open circuit according to the diagnosis procedure for determining the location of an open circuit.</p> <p>(See <a href="id100200000400.html">DETERMINING OPEN CIRCUIT LOCATION (HS-CAN)</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>13</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT CAN_L SIDE OF MS-CAN FOR SHORT TO POWER SUPPLY</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure voltage between DLC-2 terminal K (CAN_L side) and body ground.</p> </li> 
+<li> <p>Can B+ voltage be measured?</p> <p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If a short to power supply other than the B+ power supply has occurred, a constant voltage other than B+ can be measured.</p> </li> 
+</ul>
+</blockquote>  
+</li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>A short to power supply in the CAN_L side of the MS-CAN has occurred.</p> <p>Determine the location of the short to power supply according to the diagnosis procedure for determining the location of a short to power supply.</p> <p>(See <a href="id100200001000.html">DETERMINING SHORT TO POWER SUPPLY LOCATION (MS-CAN)</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>14</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>INSPECT MS-CAN FOR OPEN CIRCUIT</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage between the following terminals:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Between DLC-2 terminal L (CAN_H side) and body ground</p> </li> 
+<li> <p>Between DLC-2 terminal K (CAN_L side) and body ground</p> </li> 
+</ul>
+</blockquote> 
+<li> <p>Is the voltage between both terminals (CAN_H side and CAN_L side) equal?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Go to the next step.</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Open circuit in MS-CAN has occurred.</p> <p>Determine the location of the open circuit according to the diagnosis procedure for determining the location of an open circuit.</p> <p>(See <a href="id100200000500.html">DETERMINING OPEN CIRCUIT LOCATION (MS-CAN)</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>15</p> </td> <td valign="top" align="left" cellspacing="" rowspan="2" colspan="NaN"> <b>VERIFY MALFUNCTION OCCURRED IN MS-CAN</b> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Measure the voltage between the following terminals:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Between DLC-2 terminal L (CAN_H side) and body ground</p> </li> 
+<li> <p>Between DLC-2 terminal K (CAN_L side) and body ground</p> </li> 
+</ul>
+</blockquote> 
+<li> <p>Is the voltage between both terminals (CAN_H side and CAN_L side) equal?</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Yes</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>A short to ground in the CAN_H side of the MS-CAN has occurred.</p> <p>Determine the location of the short to ground according to the diagnosis procedure for determining the location of a short to ground.</p> <p>(See <a href="id100200000900.html">DETERMINING SHORT TO GROUND LOCATION (MS-CAN)</a>.)</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="top" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No</p> </td> <td valign="top" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>A short between circuits on the CAN_H side and CAN_L side of MS-CAN has occurred.</p> <p>Determine the location of the short between circuits according to the diagnosis procedure for determining the location of a short between circuits.</p> <p>(See <a href="id100200001100.html">DETERMINING SHORT BETWEEN CIRCUITS LOCATION (MS-CAN)</a>.)</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br>  
+<a name="id10020000010004"></a> 
+<h5>CAN communication specification quick reference table</h5> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">    
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>CAN communication related module</p> <p>(M-MDS display)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="2"> <p>CAN communication specification</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>HS-CAN</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>MS-CAN</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PCM</p> <p>(PCM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DSC HU/CM</p> <p>(ABS)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TCM</p> <p>(TCM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>AFS control module</p> <p>(AFS)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Front body control module (FBCM)</p> <p>(F_BCM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle control module (V/C-module)</p> <p>(SBS/MRCC)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DC-DC CONVERTER (i-ELOOP)</p> <p>(DCDC)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Position memory control module</p> <p>(DSM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Laser sensor</p> <p>(SCBS)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Forward sensing camera</p> <p>(FSC)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>EPS control module</p> <p>(EPS)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Start stop unit</p> <p>(SSU)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>SAS control module</p> <p>(RCM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Audio amplifier</p> <p>(AM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Instrument cluster</p> <p>(IC)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Audio unit</p> <p>(ACU)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>SIRIUS satellite radio unit</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Clock</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Climate control unit</p> <p>(EATC)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>BSM control module (LH)</p> <p>(BSML)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Rear body control module (RBCM)</p> <p>(R_BCM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p> </p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br>   
+<a name="id10020000010005"></a> 
+<h4>HS-CAN signal waveform</h4> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">   
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>CAN circuit condition</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Signal waveform (reference)</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>Normal</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SM/2014/Mazda6/n6/img.dir/ac5wzw00001216.tif"><img align="absmiddle" border="0" src="../../../img.dir/ac5wzw00001216.gif"></a>
+</p> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>CAN_H</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Connection terminal: DLC-2: terminal F (+) &harr; body ground ( &mdash; )</p> </li> 
+<li> <p>Oscilloscope setting: 0.5 V/DIV (Y), 200 &micro;s/DIV (X), DC range</p> </li> 
+</ul>
+</blockquote> 
+<li> <p>CAN_L</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Connection terminal: DLC-2: terminal E (+) &harr; Body ground ( &mdash; )</p> </li> 
+<li> <p>Oscilloscope setting: 0.5 V/DIV (Y), 200 &micro;s/DIV (X), DC range</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr>  
+</tbody>
+</table>
+<br>  
+<a name="id10020000010006"></a> 
+<h4>MS-CAN signal waveform</h4> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">   
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>CAN circuit condition</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Signal waveform (reference)</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>Normal</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> 
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SM/2014/Mazda6/n6/img.dir/ac5wzw00001217.tif"><img align="absmiddle" border="0" src="../../../img.dir/ac5wzw00001217.gif"></a>
+</p> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>CAN_H</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Connection terminal: DLC-2: terminal L (+) &harr; Body ground ( &mdash; )</p> </li> 
+<li> <p>Oscilloscope setting: 0.5 V/DIV (Y), 1 ms/DIV (X), DC range</p> </li> 
+</ul>
+</blockquote> 
+<li> <p>CAN_L</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Connection terminal: DLC-2: terminal K (+) &harr; Body ground ( &mdash; )</p> </li> 
+<li> <p>Oscilloscope setting: 0.5 V/DIV (Y), 1 ms/DIV (X), DC range</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr>  
+</tbody>
+</table>
+<br>  
+<br>
+<br>
+				<a href="id100200000000.html">< Previous</a>
+			&nbsp;
+				<a href="id100200000200.html">Next ></a>
+			<br>
+<div align="right">
+<a href="#">Back to Top</a>
+<br>
+</div>
+<div align="center">
+<em>&copy; 2012 Mazda North American Operations, U.S.A.</em>
+</div>
+</body>
+</html>

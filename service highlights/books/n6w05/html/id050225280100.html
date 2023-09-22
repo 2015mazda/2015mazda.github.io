@@ -1,0 +1,1659 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:java="smconverter.ConverterUtilities">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE MEDIA="screen, projection" TYPE="text/css">@import url(../../../../../../../../Styles/wsm.css);</STYLE>
+<META name="doc.taxonomy" content="SH||Transmission/Transaxle||On-Board Diagnostics">
+<META name="doc.language" content="en-US">
+<META name="doc.model-year" content="MAZDA6::2014||">
+<META name="doc.category" content="Transmission/Transaxle">
+<title>ON-BOARD DIAGNOSTIC SYSTEM MALFUNCTION DETECTION FUNCTION [FW6A-EL]</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center">
+<IFRAME scrolling="no" frameborder="0" height="0px" width="100%" marginwidth="0" src="http://am.mazdaserviceinfo.com/service/esi/emazda/esiContent.jsp" id="headerIFrame" name="headerIFrame"></IFRAME>
+</td>
+</tr>
+</table>
+<br>
+				<a href="id050225280000.html">< Previous</a>
+			&nbsp;
+				<a href="id050225280200.html">Next ></a>
+			<br>
+<h2>2014 -                                     
+	                	Mazda6 -                    
+	                	Transmission/Transaxle</h2>
+<a name="id050225280100"></a> 
+<h3>ON-BOARD DIAGNOSTIC SYSTEM MALFUNCTION DETECTION FUNCTION [FW6A-EL]</h3>  
+<a name="id05022528010001"></a> 
+<h4>Purpose/Function</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The malfunction diagnostic function detects transaxle malfunctions.</p> </li> 
+<li> <p>Accurate and quick repair/service can be performed to facilitate malfunction cause determination using the malfunction detection function.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id05022528010002"></a> 
+<h4>Construction/Operation</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If a malfunction occurs in the transaxle, it is recorded as a DTC. A DTC can be read by the Mazda Modular Diagnostic System (M-MDS).</p> </li> 
+</ul>
+</blockquote> 
+<a name="id05022528010003"></a> 
+<h5>DTC 7-digit code definition</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>When related systems or components have failed, the CM stores the DTC of the malfunctioning part in the CM memory, and allows for the retrieval of the stored data using the scanning tool when necessary. The DTCs are indicated using seven digits. Each digit indicates the following.</p>  <p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am3uun00001750.tif"><img align="absmiddle" border="0" src="../../../img.dir/am3uun00001750.gif"></a>
+</p>  
+</li> 
+</ul>
+</blockquote>  
+<a name="id05022528010004"></a> 
+<h5>DTC table</h5> &times;: Applicable&mdash;: Not applicable<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">         
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DTC No.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Check engine light</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Automatic transaxle warning light</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Description</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Fail-safe function</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Drive cycle</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Self test type<sup>*1</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Memory function</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0218:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Automatic transaxle protection control</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0500:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle speed signal circuit malfunction</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0666:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>ECU internal temperature sensor circuit malfunction</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0667:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>ECU internal temperature sensor/performance problem</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P06B8:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>NVRAM malfunction</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0706:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Transaxle range sensor range/performance problem</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0707:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Transaxle range sensor circuit low input</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0708:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Transaxle range sensor circuit high input</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0711:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TFT sensor range/performance problem</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0712:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TFT sensor circuit low input</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0713:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TFT sensor circuit high input</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0715:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Turbine/input shaft speed sensor/sensor output range malfunction</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0716:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Turbine/input shaft speed sensor range/performance problem</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0717:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Open circuit in turbine/input shaft speed sensor circuit</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0720:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Output shaft speed sensor range/performance problem</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0721:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Output shaft speed sensor/sensor output range malfunction</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0722:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Open circuit in output shaft speed sensor circuit</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0729:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>6GR incorrect ratio</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0731:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>1GR incorrect ratio</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0732:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>2GR incorrect ratio</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0733:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>3GR incorrect ratio</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0734:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>4GR incorrect ratio</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0735:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>5GR incorrect ratio</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0736:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Gear reverse incorrect ratio</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P073D:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Neutral incorrect ratio</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0741:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TCC control solenoid stuck off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0743:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TCC control solenoid circuit malfunction</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0746:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Pressure control solenoid stuck off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0748:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Pressure control solenoid circuit malfunction</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0751:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.1 stuck off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0752:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.1 stuck on</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0753:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.1 circuit malfunction</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0756:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.2 stuck off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0757:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.2 stuck on</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0758:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.2 circuit malfunction</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0761:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.3 stuck off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0762:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.3 stuck on</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0763:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.3 circuit malfunction</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0766:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.4 stuck off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0767:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.4 stuck on</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0768:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.4 circuit malfunction</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0771:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>On/off solenoid stuck off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0772:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>On/off solenoid stuck on</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0773:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>On/off solenoid circuit malfunction</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0780:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Gear shifting malfunction</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P079A:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.3 stuck off/On/off solenoid stuck on</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0819:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>M position switch/Up switch/Down switch signal error</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0842:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.1 stuck on</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0843:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.1 stuck off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0847:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.2 stuck on</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0848:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.2 stuck off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0872:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.3 stuck on</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0873:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.3 stuck off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0877:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.4 stuck on</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0878:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.4 stuck off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0882:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TCM power supply voltage low</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0883:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TCM power supply voltage high</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P1728:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Clutch slippage</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P1738:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Automatic transaxle internal malfunction</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P1784:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Hi cut valve stuck off/R-3-5 cut valve stuck on</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P2530:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Ignition switch stuck off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P2855:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Low clutch hydraulic circuit/sealing malfunction</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0073:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>CAN system communication error (HS CAN)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0074:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>CAN system communication error (local CAN between TCM and PCM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error to PCM (HS CAN)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0115:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error to PCM (local CAN between TCM and PCM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error to DSC HU/CM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0131:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error to EPS control module</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Illuminated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error to instrument cluster</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0442:00</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Invalid data received from PCM (local CAN between TCM and PCM)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C, O</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&times;</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<dl> 
+<dt> 
+<sup>*1</sup> 
+</dt> 
+<dd>
+<b>C: CMDTC self test, O: KOEO self test, R: KOER self test</b>
+</dd> 
+</dl>  
+<a name="id05022528010005"></a> 
+<h5>DTC separate detection condition</h5> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">    
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DTC No.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Description</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Detection condition</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0218:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Automatic transaxle protection control</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, the ATF temperature is <b>135 &deg;C {275 &deg;F} or more</b> for <b>10 s</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>TFT sensor related DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0500:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle speed signal circuit malfunction</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, the vehicle speed signal input from DSC HU/CM is incorrect for <b>10 s</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>The vehicle is driven in D position or R position.</p> </li> 
+<li> <p>Output shaft speed sensor related DTC is not recorded</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and turbine/input shaft speed sensor signal.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0666:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>ECU internal temperature sensor circuit malfunction</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, there is malfunction in circuit of ECU internal temperature sensor:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>8 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0667:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>ECU internal temperature sensor/performance problem</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, the difference between ECU internal temperatures of three ECU internal temperature sensors are <b>15 &deg;C {59 &deg;F} or more</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>Soaked for <b>6 hours or more</b>.</p> </li> 
+<li> <p>No malfunction in ECU internal temperature sensor circuit</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P06B8:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>NVRAM malfunction</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, TCM internal NVRAM data retention/read/write disabled:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>8 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0706:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Transaxle range sensor range/performance problem</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, pattern identification error in switch condition of transaxle range sensors 1 to 4:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>8 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0707:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Transaxle range sensor circuit low input</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, incorrect voltage in any one of transaxle range sensors 1 to 4:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>8 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0708:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Transaxle range sensor circuit high input</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, incorrect voltage in any one of transaxle range sensors 1 to 4:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>8 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0711:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TFT sensor range/performance problem</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, the ATF temperature is <b>40 &deg;C {104 &deg;F} or less</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Certain period has elapsed since engine start.</p> </li> 
+<li> <p>ECU internal temperature sensor related DTC is not recorded.</p> </li> 
+<li> <p>Soaked for <b>6 hours or more</b>.</p> </li> 
+<li> <p>ECU internal temperature is <b>60 &deg;C {140 &deg;F} or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, the ATF temperature is <b>120 &deg;C {248 &deg;F} or more</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Certain period has elapsed since engine start.</p> </li> 
+<li> <p>ECU internal temperature sensor related DTC is not recorded.</p> </li> 
+<li> <p>Soaked for <b>6 hours or more</b>.</p> </li> 
+<li> <p>ECU internal temperature is <b>95 &deg;C {203 &deg;F} or less</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0712:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TFT sensor circuit low input</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the TFT sensor voltage is <b>0.12 V or less</b> for <b>5 s</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>8 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0713:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TFT sensor circuit high input</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, the ATF temperature is <b>&minus;40 &deg;C {&minus;40 &deg;F} or less</b> for <b>5 s</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>8 V or more</b>.</p> </li> 
+<li> <p>IAT is <b>&minus;25 &deg;C {&minus;13 &deg;F} or more</b>.</p> </li> 
+<li> <p>IAT sensor related DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0715:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Turbine/input shaft speed sensor/sensor output range malfunction</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, the difference between engine speed signal and turbine/input shaft speed signal is <b>400 rpm or more</b> for <b>1 s</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor is <b>9,000 rpm or less</b>.</p> </li> 
+<li> <p>The gear shift position is in the neutral condition.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0716:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Turbine/input shaft speed sensor range/performance problem</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the turbine/input shaft speed is <b>9,000 rpm or more</b> for <b>1 s</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>8 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0717:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Open circuit in turbine/input shaft speed sensor circuit</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, the turbine/input shaft speed sensor signal is not input for <b>1 s</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>Vehicle speed signal related DTC is not recorded.</p> </li> 
+<li> <p>Vehicle speed is <b>16 km/h {9.9 mph} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>DTC U0121:00 is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0720:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Output shaft speed sensor range/performance problem</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, there is difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal for <b>1 s</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>The vehicle is driven in D position or R position.</p> </li> 
+<li> <p>Vehicle speed signal related DTC is not recorded.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and turbine/input shaft speed sensor signal.</p> </li> 
+<li> <p>Output shaft speed sensor signal is input.</p> </li> 
+<li> <p>Forward: Output shaft speed is <b>13,560</b><b>rpm or less</b>.</p> </li> 
+<li> <p>Reverse: Output shaft speed is <b>2,000 rpm or less</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0721:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Output shaft speed sensor/sensor output range malfunction</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the output shaft speed is <b>13,560 rpm or more</b> in forward or <b>2,000 rpm or more</b> in reverse for a continuous <b>1 s</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>8 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0722:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Open circuit in output shaft speed sensor circuit</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, the output shaft speed sensor signal is not input for <b>1 s</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>Vehicle speed signal related DTC is not recorded.</p> </li> 
+<li> <p>Vehicle speed is <b>16 km/h {9.9 mph} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>DTC U0121:00 is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0729:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>6GR incorrect ratio</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>In D position, 6GR, the following phenomenon occurs:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>There is difference between turbine/input shaft speed and output shaft speed sensor speed for <b>230 to 1,980 ms</b> (varies with ATF temperature and ECT) during shift-up.</p> </li> 
+<li> <p>There is difference between turbine/input shaft speed and output shaft speed sensor speed for<b> 1,500 to 3,900 ms</b> (varies with ATF temperature) while driving without shifting.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0731:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>1GR incorrect ratio</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>In D position, 1GR, the following phenomenon occurs:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Speed ratio is <b>0.75 to 1.2</b> for <b>2,000 ms</b> while vehicle is stopped in D position.</p> </li> 
+<li> <p>There is difference between turbine/input shaft speed and output shaft speed sensor speed for <b>230 to 1,980 ms</b> (varies with ATF temperature and ECT) during shift-up.</p> </li> 
+<li> <p>There is difference between turbine/input shaft speed and output shaft speed sensor speed for<b> 1,500 to 3,900 ms</b> (varies with ATF temperature) while driving without shifting.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0732:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>2GR incorrect ratio</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>In D position, 2GR, the following phenomenon occurs:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>There is difference between turbine/input shaft speed and output shaft speed sensor speed for <b>230 to 1,980 ms</b> (varies with ATF temperature and ECT) during shift-up.</p> </li> 
+<li> <p>There is difference between turbine/input shaft speed and output shaft speed sensor speed for<b> 1,500 to 3,900 ms</b> (varies with ATF temperature) while driving without shifting.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0733:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>3GR incorrect ratio</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>In D position, 3GR, the following phenomenon occurs:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>There is difference between turbine/input shaft speed and output shaft speed sensor speed for <b>230 to 1,980 ms</b> (varies with ATF temperature and ECT) during shift-up.</p> </li> 
+<li> <p>There is difference between turbine/input shaft speed and output shaft speed sensor speed for<b> 1,500 to 3,900 ms</b> (varies with ATF temperature) while driving without shifting.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0734:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>4GR incorrect ratio</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>In D position, 4GR, the following phenomenon occurs:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>There is difference between turbine/input shaft speed and output shaft speed sensor speed for <b>230 to 1,980 ms</b> (varies with ATF temperature and ECT) during shift-up.</p> </li> 
+<li> <p>There is difference between turbine/input shaft speed and output shaft speed sensor speed for<b> 1,500 to 3,900 ms</b> (varies with ATF temperature) while driving without shifting.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0735:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>5GR incorrect ratio</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>In D position, 5GR, the following phenomenon occurs:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>There is difference between turbine/input shaft speed and output shaft speed sensor speed for <b>230 to 1,980 ms</b> (varies with ATF temperature and ECT) during shift-up.</p> </li> 
+<li> <p>There is difference between turbine/input shaft speed and output shaft speed sensor speed for<b> 1,500 to 3,900 ms</b> (varies with ATF temperature) while driving without shifting.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0736:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Gear reverse incorrect ratio</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Speed ratio is <b>0.75 to 1.2</b> for <b>2,000 ms</b> while vehicle is stopped in R position.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P073D:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Neutral incorrect ratio</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>In P or N position, the following phenomenon occurs:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Speed ratio is <b>0.5 or less</b> for <b>2 s</b> while vehicle is stopped in P or N position.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0741:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TCC control solenoid stuck off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, difference in slip amount <b>over 5 s</b> compared to target slip amount is <b>200 rpm or more</b>, and TCC feedback hydraulic pressure is <b>200 kPa {2.04 kgf/cm<sup>2</sup>, 29.0 psi} or more</b> occurs:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Selector lever position is D position.</p> </li> 
+<li> <p>No electrical malfunction in TCC control solenoid</p> </li> 
+<li> <p>During TCC or TCC feedback</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>&minus;25 &deg;C {&minus;13 &deg;F} or more</b>.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0743:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TCC control solenoid circuit malfunction</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the TCM detects the TCC control solenoid circuit malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>10.5 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0746:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Pressure control solenoid stuck off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, pressure control solenoid stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0748:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Pressure control solenoid circuit malfunction</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the TCM detects the pressure control solenoid circuit malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>10.5 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0751:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.1 stuck off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, shift solenoid No.1 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0752:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.1 stuck on</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, shift solenoid No.1 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0753:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.1 circuit malfunction</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the TCM detects the shift solenoid No.1 circuit malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>10.5 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0756:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.2 stuck off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, shift solenoid No.2 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0757:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.2 stuck on</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, shift solenoid No.2 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0758:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.2 circuit malfunction</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the TCM detects the shift solenoid No.2 circuit malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>10.5 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0761:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.3 stuck off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, shift solenoid No.3 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0762:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.3 stuck on</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, shift solenoid No.3 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0763:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.3 circuit malfunction</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the TCM detects the shift solenoid No.3 circuit malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>10.5 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0766:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.4 stuck off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, shift solenoid No.4 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0767:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.4 stuck on</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, shift solenoid No.4 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0768:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.4 circuit malfunction</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the TCM detects the shift solenoid No.4 circuit malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>10.5 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0771:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>On/off solenoid stuck off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, on/off solenoid stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0772:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>On/off solenoid stuck on</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, on/off solenoid stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0773:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>On/off solenoid circuit malfunction</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the TCM detects the on/off solenoid circuit malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>10.5 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0780:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Gear shifting malfunction</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the gear shifting inhibited:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P079A:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift solenoid No.3 stuck off/On/off solenoid stuck on</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, shift solenoid No.3 stuck-off or on/off solenoid stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0819:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>M position switch/Up switch/Down switch signal error</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, any of (1) to (4) conditions occurs for <b>1 s</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>Battery voltage is <b>8 V or more</b>.</p> </li> 
+<li> <p>Transaxle range sensor related DTC is not recorded.</p> </li> 
+<blockquote>
+<ul> 
+<li> <p>(1) M position switch signal is on even though forward oil pressure switch is on in any position other than D position.</p> </li> 
+<li> <p>(2) M position switch signal is off even though up or down switch signal is on in D position.</p> </li> 
+<li> <p>(3) Up switch signal is on even though M position switch signal is off in any position other than D position.</p> </li> 
+<li> <p>(4) Down switch signal is on even though M position switch signal is off in any position other than D position.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0842:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.1 stuck on</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, oil pressure switch No.1 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0843:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.1 stuck off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, oil pressure switch No.1 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0847:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.2 stuck on</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, oil pressure switch No.2 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0848:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.2 stuck off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, oil pressure switch No.2 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0872:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.3 stuck on</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, oil pressure switch No.3 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0873:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.3 stuck off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, oil pressure switch No.3 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0877:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.4 stuck on</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, oil pressure switch No.4 stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0878:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.4 stuck off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, oil pressure switch No.4 stuck-off detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0882:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TCM power supply voltage low</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, the TCM power supply voltage is <b>8&mdash;10.5 V or less</b> (varies with ATF temperature):</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p> <b>5 s or more</b> has elapsed or battery voltage exceeds <b>11 V or more</b> for <b>0.2 s</b> since engine speed increases <b>&minus;200 rpm or more</b> of target idle speed.</p> </li> 
+<li> <p>Selector lever position is D or R position.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P0883:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TCM power supply voltage high</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>TCM power supply voltage is <b>18 V or more</b> for <b>5 s</b>.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P1728:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Clutch slippage</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, turbine/input shaft speed suddenly increases <b>300 rpm or more</b> for <b>1,450 ms</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>Vehicle speed is <b>5 km/h {3 mph} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Not shifting</p> </li> 
+<li> <p>Selector lever position is D position.</p> </li> 
+<li> <p>Turbine/input shaft speed is <b>1,200 rpm or more</b>.</p> </li> 
+<li> <p>Oil pressure switch pattern (1st&mdash;6th) is normal.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P1738:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Automatic transaxle internal malfunction</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Malfunction location cannot be determined based on combination of gear ratio malfunction and oil pressure switch pattern malfunction.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P1784:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Hi cut valve stuck off/R-3-5 cut valve stuck on</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following conditions, hi cut valve stuck-off or R-3-5 cut valve stuck-on detected by combination of gear ratio malfunction and oil pressure switch pattern malfunction:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Engine is running.</p> </li> 
+<li> <p>ATF temperature is <b>20 &deg;C {68 &deg;F} or more</b>.</p> </li> 
+<li> <p>There is no difference between vehicle speed signal from DSC HU/CM and output shaft speed sensor signal.</p> </li> 
+<li> <p>Turbine/input shaft speed sensor and output shaft speed sensor DTC is not recorded.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P2530:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Ignition switch stuck off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If the IG ON time count of the instrument cluster proceeds <b>5 s</b> under the following condition:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Ignition switch signal off</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P2855:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Low clutch hydraulic circuit/sealing malfunction</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Slow engaging after operating selector lever from N to D position.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Diagnostic support note</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>The check engine light does not illuminate.</p> </li> 
+<li> <p>The automatic transaxle warning light illuminates if the TCM detects the above malfunction condition in two consecutive drive cycles or in one drive cycle while the DTC for the same malfunction has been stored in the TCM.</p> </li> 
+<li> <p>PENDING CODE is available.</p> </li> 
+<li> <p>FREEZE FRAME DATA is not available.</p> </li> 
+<li> <p>DTC is stored in the TCM memory.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0073:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>CAN system communication error (HS CAN)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, a communication error (HS CAN) occurs:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>10 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0074:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>CAN system communication error (local CAN between TCM and PCM)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, a communication error (local CAN between TCM and PCM) occurs:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>10 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0100:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error to PCM (HS CAN)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the TCM cannot receive the signal from PCM (HS CAN):</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>10 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0115:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error to PCM (local CAN between TCM and PCM)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the TCM cannot receive the signal from PCM (local CAN between TCM and PCM):</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>10 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0121:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error to DSC HU/CM</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the TCM cannot receive the signal from DSC HU/CM:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>10 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0131:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error to EPS control module</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the TCM cannot receive the signal from EPS control module:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>10 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0155:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Communication error to instrument cluster</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the TCM cannot receive the signal from instrument cluster:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>10 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>U0442:00</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Invalid data received from PCM (local CAN between TCM and PCM)</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Under the following condition, the TCM detects the invalid PCM signal for <b>0.5 s</b>:</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Battery voltage is <b>10 V or more</b>.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</td> 
+</tr>  
+</tbody>
+</table>
+<br>  
+<a name="id05022528010006"></a> 
+<h5>Drive cycle</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The drive cycle is the period of time from when the engine is started to the next time the engine is started.</p> </li> 
+<li> <p>One drive cycle, as shown in the figure, indicates the period from the time engine is started to the next time the engine is started. If this period is repeated twice it then becomes two drive cycles.</p>  <p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am3uun00002080.tif"><img align="absmiddle" border="0" src="../../../img.dir/am3uun00002080.gif"></a>
+</p>  
+</li> 
+<li> <p>To detect DTCs, a required number of drive cycles for pre-detection has been set. For the number of drive cycles required for detection, refer to the DTC table.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id05022528010007"></a> 
+<h5>Pending code</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The pending code is temporary malfunction code which differs from DTCs which are recorded when the TCM detects a transaxle malfunction.</p> </li> 
+<li> <p>DTCs are recorded in the TCM according to the number of drive cycles when the TCM detects a transaxle malfunction. At the same time, pending code is recorded in the TCM regardless of the number of drive cycles.</p> </li> 
+<li> <p>Pending code recorded in the TCM is erased from the TCM, from the next drive cycle, when the TCM determines that the transaxle is normal.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id05022528010008"></a> 
+<h5>Status byte for DTC</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The status byte is the two-digit code (two digits after hyphen (-)) after the DTC.</p>  <p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am5uun00000323.tif"><img align="absmiddle" border="0" src="../../../img.dir/am5uun00000323.gif"></a>
+</p>  
+</li> 
+<li> <p>The status byte is a code which indicates the pending code, current/past malfunction status, or warning illumination status.</p> </li> 
+<li> <p>The status byte can be read by performing a CMDTC self test using the Mazda Modular Diagnostic System (M-MDS).</p> </li> 
+<li> <p>For details on the status byte, refer to the explanation on the Mazda Modular Diagnostic System (M-MDS) when reading the DTC.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id05022528010009"></a> 
+<h5>Self test function</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>When the self test is implemented, the TCM performs diagnosis of the transaxle control system. If a malfunction is detected with the results of the diagnosis, an applicable DTC is recorded. A recorded DTC can be read by the Mazda Modular Diagnostic System (M-MDS).</p> </li> 
+<li> <p>By implementing the self test function, verification of the current malfunction and verification after repair is facilitated.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>CMDTC (Continuous Memory Diagnostic Trouble Code) self test</b> 
+<li> <p>The CMDTC self test is a function which reads all DTCs recorded in the TCM after the previous DTCs are erased no matter whether they are past malfunctions or current malfunctions.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>KOEO (Key On Engine Off) self test</b> 
+<li> <p>The KOEO self test can perform malfunction diagnosis of DTCs corresponding to this self test function when the ignition is switched ON and the engine is stopped. This self test implements based on the test implementation command signal sent to the TCM from the Mazda Modular Diagnostic System (M-MDS).</p> </li> 
+</ul>
+</blockquote>  
+<a name="id05022528010010"></a> 
+<h5>Freeze frame data/Snapshot data</h5> 
+<blockquote>
+<ul type="disc"> 
+<b>Freeze frame data</b> 
+<li> <p>The freeze frame data consists of data for vehicle and transaxle control system operation conditions when malfunctions in the transaxle control system are detected and stored in the TCM.</p> </li> 
+<li> <p>Freeze frame data is stored at the instant the malfunction indicator lamp illuminates, and only a part of the DTC data is stored.</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="disc"> 
+<b>Snapshot data</b> 
+<li> <p>The data for all DTCs currently detected is stored.</p> </li> 
+<blockquote>
+<ul type="square"> 
+<b>Recorded DTC timing</b> 
+<li> <p>For DTCs with one drive cycle, data is recorded during the malfunction determination period.</p> </li> 
+<li> <p>For DTCs with two drive cycles, data is recorded during non-determination (1st diagnosis) periods.</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+<b>Freeze frame data item table</b>&mdash;: Not applicable<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">     
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Freeze frame data item</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Unit</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Description</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Corresponding PID/DATA monitor item</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>LOAD</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>%</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Calculated engine load</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>ECT</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&deg;C {&deg;F}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Engine coolant temperature</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>ECT</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>RPM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>RPM</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Engine speed</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>RPM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>VS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>KPH {MPH}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle speed</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>VSS</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>IAT</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&deg;C {&deg;F}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Intake air temperature</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TP</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>%</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Throttle valve position No.1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>RUNTM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>hh:mm:ss</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Time from engine start</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>VPWR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>V</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Module supply voltage</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>VPWR</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>APP_D</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>%</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Accelerator pedal position No.1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<b>Snapshot data item table</b>&mdash;: Not applicable<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">     
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Snapshot data item</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Unit</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Description</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Corresponding PID/DATA monitor item</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>LOAD</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>%</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Calculated engine load</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>ECT</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&deg;C {&deg;F}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Engine coolant temperature</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>ECT</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>RPM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>RPM</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Engine speed</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>RPM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>VSS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>KPH {MPH}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle speed</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>VSS</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>IAT</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&deg;C {&deg;F}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Intake air temperature</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>EG_RUN_TIME</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Time from engine start</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>VPWR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>V</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Module supply voltage</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>VPWR</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>APP1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>%</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Accelerator pedal position No.1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>GEAR_SEL</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1/2/3/4/5/6</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Gear shift position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>GEAR_SEL</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TSS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>RPM</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Turbine/input shaft speed</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TSS</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TFT</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&deg;C {&deg;F}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>ATF temperature</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TFT</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OSS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>RPM</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Output shaft speed</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OSS</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>LOCK_UP</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/SLIP/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Torque converter (TCC condition)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>LOCK_UP</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OIL_PRES_SW2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.2 condition</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OP_SW2</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OIL_PRES_SW1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.1 condition</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OP_SW1</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SS_ON_OFF</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>On/off solenoid condition</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SS_ON-OFF</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TORQUE_DES</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Nm</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Desired engine torque</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TORQUE_DES</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>APP</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>%</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Accelerator pedal position No.1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>G_INHIBIT_6</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>6GR is inhibited due to malfunction.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>G_INHIBIT_5</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>5GR is inhibited due to malfunction.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>G_INHIBIT_4</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>4GR is inhibited due to malfunction.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>G_INHIBIT_3</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>3GR is inhibited due to malfunction.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>G_INHIBIT_2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>2GR is inhibited due to malfunction.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>G_INHIBIT_1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>1GR is inhibited due to malfunction.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>G_INHIBIT_R</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>R position is inhibited due to malfunction.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>G_INHIBIT_N</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>N position is inhibited due to malfunction.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OIL_PRES_SW4</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.4 condition</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OP_SW4</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OIL_PRES_SW3</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.3 condition</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OP_SW3</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SHIFT_CTRL</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DEFAULT/MANUAL/C_CONTROL/HIGH_TEMP/D_MANUAL/FAIL_SAFE</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift control mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SHIFT_CTRL</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SLIP_VALUE</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>RPM</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Actual slip value between TSS and OSS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>HTM_DIS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>km {mile}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Travel distance since determination of ATF high temperature mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>HTM_DIS</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>MST_REC_SFT</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>The gear shift position before shifting gears is displayed.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SE_TYPE</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SFT_CTL_STS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>The shift control execution condition is displayed.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SC_STATE</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SERIAL_DTC</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>DTC</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Transaxle range sensor position.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TR</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>PADDLE_UP</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift up operation using steering shift switch.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>PADDLE_UP</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>PADDLE_DOWN</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift down operation using steering shift switch.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>PADDLE_DOWN</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br>   
+<br>
+<br>
+				<a href="id050225280000.html">< Previous</a>
+			&nbsp;
+				<a href="id050225280200.html">Next ></a>
+			<br>
+<div align="right">
+<a href="#">Back to Top</a>
+<br>
+</div>
+<div align="center">
+<em>&copy; 2012 Mazda North American Operations, U.S.A.</em>
+</div>
+</body>
+</html>

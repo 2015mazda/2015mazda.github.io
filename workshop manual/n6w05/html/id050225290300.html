@@ -1,0 +1,1072 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:java="smconverter.ConverterUtilities">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE MEDIA="screen, projection" TYPE="text/css">@import url(../../../../../../../../Styles/wsm.css);</STYLE>
+<META name="doc.taxonomy" content="SM||Transmission/Transaxle||On-Board Diagnostics">
+<META name="doc.language" content="en-US">
+<META name="doc.model-year" content="MAZDA6::2014||">
+<META name="doc.category" content="Transmission/Transaxle">
+<title>ON-BOARD DIAGNOSTIC SYSTEM PID/DATA MONITOR INSPECTION [FW6A-EL]</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center">
+<IFRAME scrolling="no" frameborder="0" height="0px" width="100%" marginwidth="0" src="http://am.mazdaserviceinfo.com/service/esi/emazda/esiContent.jsp" id="headerIFrame" name="headerIFrame"></IFRAME>
+</td>
+</tr>
+</table>
+<br>
+				<a href="id050225905300.html">< Previous</a>
+			&nbsp;
+				<a href="id050225290400.html">Next ></a>
+			<br>
+<h2>2014 -                                     
+	                	Mazda6 -                    
+	                	Transmission/Transaxle</h2>
+<a name="id050225290300"></a> 
+<h3>ON-BOARD DIAGNOSTIC SYSTEM PID/DATA MONITOR INSPECTION [FW6A-EL]</h3>  
+<blockquote>1.  Connect the M-MDS to the DLC-2. </blockquote> 
+<blockquote>2.  After the vehicle is identified, select the following items from the initialization screen of the M-MDS. <blockquote>a.  Select &ldquo;Data Logger&rdquo;. </blockquote> 
+<blockquote>b.  Select &ldquo;Modules&rdquo;. </blockquote> 
+<blockquote>c.  Select &ldquo;TCM&rdquo;. </blockquote> 
+</blockquote> 
+<blockquote>3.  Select the applicable PID from the PID table. </blockquote> 
+<blockquote>4.  Verify the PID data according to the directions on the screen. </blockquote> 
+<p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The PID data screen function is used for monitoring the calculated value of input/output signals in the module. Therefore, if the monitored value of the output components is not within the specification, it is necessary to inspect the monitored value of input components corresponding to the applicable output part control. In addition, because the system does not display an output part malfunction as an abnormality in the monitored value, it is necessary to inspect the output components individually.</p> </li> 
+<li> <p>When detecting DTCs, PIDs related to a malfunctioning system may not display even if the module is normal. Therefore, if a PID is not displayed, it is necessary to verify the DTC, perform malfunction diagnosis of the DTC that was detected, and do repairs.</p> </li> 
+</ul>
+</blockquote>  
+<b>PID/DATA monitor item table (Reference)</b>&mdash;: Not applicable<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">      
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Item</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Unit/Condition</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Test condition</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Specification (Reference)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Output part name</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>APP</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>%</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Accelerator pedal released</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0%</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>Accelerator pedal position</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Accelerator pedal depressed</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 100%</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>APP1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>%</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Accelerator pedal released</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 15%</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>APP sensor No.1</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Accelerator pedal depressed</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 82%</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DGP_DIS_1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>km {mile}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays traveled distance since the differential protection control operated due to excessive rotation difference between left/right drive wheels</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DGP_DIS_2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>km {mile}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays traveled distance since the DGP_MAX_DIF is updated</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DGP_MAX_DIF</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>RPM</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays maximum rotation difference since the differential protection control operated due to excessive rotation difference between left/right drive wheels</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DGP_SPD</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>KPH {MPH}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays vehicle speed with trailing wheels since the differential protection control operated due to excessive rotation difference between left/right drive wheels</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>ECT</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&deg;C {&deg;F}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays ECT</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>ECT sensor</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>ECU_A</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&deg;C {&deg;F}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays ECU internal temperature A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>ECU internal temperature sensor A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>ECU_B</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&deg;C {&deg;F}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays ECU internal temperature B</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>ECU internal temperature sensor B</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>ECU_C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&deg;C {&deg;F}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays ECU internal temperature C</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>ECU internal temperature sensor C</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>GEAR_RA</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>Ratio</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 1GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 3.5526</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="6" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Shift solenoid No.1</p> </li> 
+<li> <p>Shift solenoid No.2</p> </li> 
+<li> <p>Shift solenoid No.3</p> </li> 
+<li> <p>Shift solenoid No.4</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 2GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 2.0228</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 3GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1.4522</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 4GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1.0000</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 5GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0.7084</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 6GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0.5993</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>GEAR_SEL</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>1/2/3/4/5/6</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 1GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>1</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="6" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Shift solenoid No.1</p> </li> 
+<li> <p>Shift solenoid No.2</p> </li> 
+<li> <p>Shift solenoid No.3</p> </li> 
+<li> <p>Shift solenoid No.4</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 2GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>2</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 3GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>3</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 4GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>4</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 5GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>5</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 6GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>6</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>HI_TEMP</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays ATF high temperature mode determination amount (ATF temperature 132 &deg;C {270 &deg;F} or more)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>HTM_CNT</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays ATF high temperature mode determination amount (ATF temperature 132 &deg;C {270 &deg;F} or more)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>HTM_DIS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>km {mile}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays traveled distance after determining the ATF high temperature mode (ATF temperature 132 &deg;C {270 &deg;F} or more)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>LINEDES</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>kPa {kgf/cm<sup>2</sup>, psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Idle at P position after warm-up</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 500 kPa {5.10 kgf/cm<sup>2</sup>, 72.5 psi}</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>LN_C_CLUTCH</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>kPa {kgf/cm<sup>2</sup>, psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays hydraulic control learning value data</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>LN_O_CLUTCH</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>kPa {kgf/cm<sup>2</sup>, psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays hydraulic control learning value data</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>LN_OV_SCOPE</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays hydraulic control learning value data</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>LN_T_CLUTCH</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>kPa {kgf/cm<sup>2</sup>, psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays hydraulic control learning value data</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>LOCK_UP</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OFF/SLIP/ON</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>OFF:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Except below</p> </li> 
+</ul>
+</blockquote> <p>SLIP:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>"SLIP" is displayed during TCC control with the difference between the engine speed and turbine shaft speed less than the control value.</p> </li> 
+<li> <p>Resets while TCC control is stopped or if the difference between the engine speed and turbine/shaft speed is the specification or more.</p> </li> 
+</ul>
+</blockquote> <p>ON:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>"ON" is displayed during TCC control and there is almost no difference between the engine speed and turbine shaft speed<sup>*</sup>.</p> </li> 
+<li> <p>Resets while TCC control is stopped or if the difference between the engine speed and turbine shaft speed is the specification or more.</p> </li> 
+</ul>
+</blockquote> <p> <sup>*</sup>: The TCC controls the TCC hydraulic pressure to suppress hydraulic pressure loss and transaxle vibration due to TCC clutch engagement. Therefore, normally, there is a difference between the engine speed and turbine shaft speed. Because the TCC hydraulic pressure is increased by the fail-safe and TCC is performed while the ATF is hot, there is almost no difference.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>LONGI_ACCEL</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays acceleration calculated from the drive wheels</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>OP_SW1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>Oil pressure switch No.1</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 1GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 2GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 3GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 4GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 5GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 6GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OP_SW1_OFF</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>kPa {kgf/cm<sup>2</sup>, psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>After performing on-board diagnostic test mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>More than 50 kPa {0.51 kgf/cm<sup>2</sup>, 7.3 psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.1</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OP_SW1_ON</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>kPa {kgf/cm<sup>2</sup>, psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>After performing on-board diagnostic test mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Less than 320 kPa {3.26 kgf/cm<sup>2</sup>, 46.4 psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.1</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>OP_SW2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>Oil pressure switch No.2</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 1GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 2GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 3GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 4GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 5GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 6GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OP_SW2_OFF</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>kPa {kgf/cm<sup>2</sup>, psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>After performing on-board diagnostic test mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>More than 50 kPa {0.51 kgf/cm<sup>2</sup>, psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.2</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OP_SW2_ON</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>kPa {kgf/cm<sup>2</sup>, psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>After performing on-board diagnostic test mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Less than 260 kPa {2.65 kgf/cm<sup>2</sup>, 37.7 psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.2</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>OP_SW3</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>Oil pressure switch No.3</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 1GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 2GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 3GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 4GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 5GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 6GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OP_SW3_OFF</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>kPa {kgf/cm<sup>2</sup>, psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>After performing on-board diagnostic test mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>More than 50 kPa {0.51 kgf/cm<sup>2</sup>, 7.3 psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.3</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OP_SW3_ON</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>kPa {kgf/cm<sup>2</sup>, psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>After performing on-board diagnostic test mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Less than 215 kPa {2.19 kgf/cm<sup>2</sup>, 31.2 psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.3</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>OP_SW4</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>Oil pressure switch No.4</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 1GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 2GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 3GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 4GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 5GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever in 6GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OP_SW4_OFF</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>kPa {kgf/cm<sup>2</sup>, psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>After performing on-board diagnostic test mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>More than 50 kPa {0.51 kgf/cm<sup>2</sup>, 7.3 psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.4</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>OP_SW4_ON</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>kPa {kgf/cm<sup>2</sup>, psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>After performing on-board diagnostic test mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Less than 260 kPa {2.65 kgf/cm<sup>2</sup>, 37.7 psi} (0 kPa {0 kgf/cm<sup>2</sup>, 0 psi} before performing on-board diagnostic test mode)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Oil pressure switch No.4</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>OSS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>RPM</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>0 RPM</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>Output shaft speed sensor</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle speed 30 km/h {19 mph} in 4GR at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1000 RPM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>PADDLE_DOWN<sup>*1</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Except below</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift down operation using steering shift switch</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>PADDLE_UP<sup>*1</sup></p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Except below</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift up operation using steering shift switch</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>RPM</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>RPM</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays engine speed</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>PCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SC_STATE</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Not Active/Active</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>The shift control execution condition is displayed.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SE_TYPE</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>No valid data/Bf_1st Af_2nd/Bf_1st Af_3rd/Bf_1st Af_4th/Bf_1st Af_5th/Bf_1st Af_6th/Bf_2nd Af_1st/Bf_2nd Af_3rd/Bf_2nd Af_4th/Bf_2nd Af_5th/Bf_2nd Af_6th/Bf_3rd Af_1st/Bf_3rd Af_2nd/Bf_3rd Af_4th/Bf_3rd Af_5th/Bf_3rd Af_6th/Bf_4th Af_1st/Bf_4th Af_2nd/Bf_4th Af_3rd/Bf_4th Af_5th/Bf_4th Af_6th/Bf_5th Af_1st/Bf_5th Af_2nd/Bf_5th Af_3rd/Bf_5th Af_4th/Bf_5th Af_6th/Bf_6th Af_1st/Bf_6th Af_2nd/Bf_6th Af_3rd/Bf_6th Af_4th/Bf_6th Af_5th</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>The gear shift position before shifting gears is displayed.</p> <p>
+<b><font color="#254164">NOTE: </font></b>
+</p> 
+<blockquote>
+<ul> 
+<li> <p>Bf indicates gear position before shifting</p> </li> 
+<li> <p>Af indicates gear position after shifting</p> </li> 
+<blockquote>
+<ul> 
+<li> <p>(Example of display) Bf_1st Af_2nd</p> </li> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Bf_1st:Gear position at 1st gear before shifting</p> </li> 
+<li> <p>Af_2nd:Gear position at 2nd gear after shifting</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote>  
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>SHIFT_CTRL</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>DEFAULT/MANUAL/C_CONTROL/HIGH_TEMP/D_MANUAL/FAIL_SAFE</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>D position normal mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>DEFAULT</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="6" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>M position manual mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>MANUAL</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Cruise control (cruise control system)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>C_CONTROL</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Automatic transaxle protection mode (ATF high temperature mode)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>HIGH_TEMP</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>D position direct mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>D_MANUAL</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Fail-safe mode</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>FAIL_SAFE</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>SS_ON-OFF</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>On/off solenoid is off.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>On/off solenoid</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>On/off solenoid is on.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>SS1</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>Shift solenoid No.1</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 1GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 2GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 3GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 4GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 5GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 6GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>SS1_C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>Shift solenoid No.1</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 1GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 2GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 3GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 4GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 5GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 6GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>SS2</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>Shift solenoid No.2</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 1GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 2GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 3GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 4GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 5GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 6GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>SS2_C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>Shift solenoid No.2</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 1GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 2GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 3GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 4GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 5GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 6GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>SS3</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>Shift solenoid No.3</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 1GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 2GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 3GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 4GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 5GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 6GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>SS3_C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>Shift solenoid No.3</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 1GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 2GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 3GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 4GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 5GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 6GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>SS4</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>Shift solenoid No.4</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 1GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 2GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 3GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 4GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 5GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 6GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>SS4_C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>Shift solenoid No.4</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 1GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 2GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 3GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 1 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 4GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 5GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Driving in D position 6GR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>SSLU</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>TCC control solenoid</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 1GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 430 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 2GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 430 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 3GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 430 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 4GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 430 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 5GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 430 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 6GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 430 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>SSLU_C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>TCC control solenoid</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 0 A</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 1GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 430 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 2GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 430 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 3GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 430 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 4GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 430 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 5GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 430 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 6GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 430 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>SSLU_PRES</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>kPa {kgf/cm<sup>2</sup>, psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>0 kPa {0 kgf/cm<sup>2</sup>, 0 psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>TCC control solenoid</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>0 kPa {0 kgf/cm<sup>2</sup>, 0 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>0 kPa {0 kgf/cm<sup>2</sup>, 0 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 1GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 360 kPa {3.67 kgf/cm<sup>2</sup>, 52.2 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 2GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 360 kPa {3.67 kgf/cm<sup>2</sup>, 52.2 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 3GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 360 kPa {3.67 kgf/cm<sup>2</sup>, 52.2 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 4GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 360 kPa {3.67 kgf/cm<sup>2</sup>, 52.2 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 5GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 360 kPa {3.67 kgf/cm<sup>2</sup>, 52.2 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 6GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 360 kPa {3.67 kgf/cm<sup>2</sup>, 52.2 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>SSP</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 980 mA</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>Pressure control solenoid</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 930 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 980 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 1GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 400&mdash;800 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 2GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 400&mdash;800 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 3GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 400&mdash;800 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 4GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 400&mdash;800 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 5GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 400&mdash;800 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 6GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 400&mdash;800 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>SSP_C</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>A</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 980 mA</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>Pressure control solenoid</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 930 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 980 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 1GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 400&mdash;800 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 2GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 400&mdash;800 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 3GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 400&mdash;800 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 4GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 400&mdash;800 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 5GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 400&mdash;800 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 6GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 400&mdash;800 mA</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>SSP_PRES</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="9" colspan="NaN"> <p>kPa {kgf/cm<sup>2</sup>, psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 45 kPa {0.46 kgf/cm<sup>2</sup>, 6.5 psi}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="9" colspan="NaN"> <p>Pressure control solenoid</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 80 kPa {0.82 kgf/cm<sup>2</sup>, 12 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 45 kPa {0.46 kgf/cm<sup>2</sup>, 6.5 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 1GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>130&mdash;460 kPa {1.33&mdash;4.69 kgf/cm<sup>2</sup>, 18.9&mdash;66.7 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 2GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>130&mdash;460 kPa {1.33&mdash;4.69 kgf/cm<sup>2</sup>, 18.9&mdash;66.7 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 3GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>130&mdash;460 kPa {1.33&mdash;4.69 kgf/cm<sup>2</sup>, 18.9&mdash;66.7 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 4GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>130&mdash;460 kPa {1.33&mdash;4.69 kgf/cm<sup>2</sup>, 18.9&mdash;66.7 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 5GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>130&mdash;460 kPa {1.33&mdash;4.69 kgf/cm<sup>2</sup>, 18.9&mdash;66.7 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Under the following conditions:</p> <blockquote>
+<ul type="disc"> 
+<li> <p>Driving in D position 6GR</p> </li> 
+<li> <p>Accelerator pedal opening angle is approx. 10 %</p> </li> 
+</ul>
+</blockquote> 
+</td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>130&mdash;460 kPa {1.33&mdash;4.69 kgf/cm<sup>2</sup>, 18.9&mdash;66.7 psi}</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TFT</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&deg;C {&deg;F}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays ATF temperature</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>TFT sensor</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>THOP</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>%</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Accelerator pedal fully released</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 22 %</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>PCM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Accelerator pedal fully depressed</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Approx. 91 %</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TORQUE_ACT</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Nm</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays actual engine torque</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>TORQUE_DES</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Nm</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays desired engine torque</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="7" colspan="NaN"> <p>TR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="7" colspan="NaN"> <p>P/SHIFT_DOWN/SHIFT_UP/M/D/N/R</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>P</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="7" colspan="NaN"> <p>Transaxle range sensor</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at M position (&minus;) side position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SHIFT_DOWN</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at M position (+) side position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>SHIFT_UP</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at M position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>M</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>D</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at N position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>N</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Selector lever at R position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>R</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>TSS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>RPM</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Vehicle stopped at D position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>0 RPM</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>Turbine/input shaft speed sensor</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Engine speed 1,000 rpm at P position</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>900&mdash;1,100 RPM</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>UPSHIFT_REV</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>Off/On</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift-up due to engine request is not recorded. (Shift up request can be reset by clearing the DTCs.)</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Off</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="2" colspan="NaN"> <p>&mdash;</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Shift-up due to engine request is recorded.</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>On</p> </td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>VPWR</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>V</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays TCM power supply voltage</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Battery</p> </li> 
+<li> <p>TCM</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>VSS</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>KPH {MPH}</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Displays vehicle speed</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Output shaft speed sensor</p> </td> 
+</tr>  
+</tbody>
+</table>
+<br> 
+<dl> 
+<dt> 
+<sup>*1</sup> 
+</dt> 
+<dd>
+<b>With steering shift switch</b>
+</dd> 
+</dl> 
+<br>
+<br>
+				<a href="id050225905300.html">< Previous</a>
+			&nbsp;
+				<a href="id050225290400.html">Next ></a>
+			<br>
+<div align="right">
+<a href="#">Back to Top</a>
+<br>
+</div>
+<div align="center">
+<em>&copy; 2012 Mazda North American Operations, U.S.A.</em>
+</div>
+</body>
+</html>

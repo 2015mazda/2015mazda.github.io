@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:java="smconverter.ConverterUtilities">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE MEDIA="screen, projection" TYPE="text/css">@import url(../../../../../../../../Styles/wsm.css);</STYLE>
+<META name="doc.taxonomy" content="SH||Suspension||Wheel and Tires">
+<META name="doc.language" content="en-US">
+<META name="doc.model-year" content="MAZDA6::2014||">
+<META name="doc.category" content="Suspension">
+<title>TIRE PRESSURE MONITORING SYSTEM (TPMS)</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center">
+<IFRAME scrolling="no" frameborder="0" height="0px" width="100%" marginwidth="0" src="http://am.mazdaserviceinfo.com/service/esi/emazda/esiContent.jsp" id="headerIFrame" name="headerIFrame"></IFRAME>
+</td>
+</tr>
+</table>
+<br>
+				<a href="id021200629800.html">< Previous</a>
+			&nbsp;
+				<a href="id021200202000.html">Next ></a>
+			<br>
+<h2>2014 -                                     
+	                	Mazda6 -                    
+	                	Suspension</h2>
+<a name="id021200201000"></a> 
+<h3>TIRE PRESSURE MONITORING SYSTEM (TPMS)</h3>  
+<a name="id02120020100001"></a> 
+<h4>Purpose, Outline</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The tire pressure monitoring system monitors the tire pressure of all 4 tires. If the tire pressure of 1 tire or more becomes excessively low, the driver is notified.</p> </li> 
+<li> <p>A tire pressure monitoring system has been adopted which indirectly inspects the tire pressures and warns the driver.</p> </li> 
+<li> <p>A switch for initializing the tire pressure monitoring system after the tire pressures have been adjusted is installed to the instrument cluster. (See <a href="id021200203000.html">TIRE PRESSURE MONITORING SYSTEM SET SWITCH</a>.)</p> </li> 
+</ul>
+</blockquote>  
+<a name="id02120020100002"></a> 
+<h4>System structural view</h4>  
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6zzn00002122.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6zzn00002122.gif"></a>
+</p>   
+<a name="id02120020100003"></a> 
+<h4>System wiring diagram</h4>  
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/am6xun00001524.tif"><img align="absmiddle" border="0" src="../../../img.dir/am6xun00001524.gif"></a>
+</p>   
+<a name="id02120020100004"></a> 
+<h4>Detection method</h4> 
+<blockquote>
+<ul type="disc"> 
+<b>Detection of the tire air pressure is performed by combining the following two methods.</b> 
+<li> <p>Dynamic loaded radius detection</p> <p>Detects the tire rotation speed using the ABS wheel speed sensor. The rotation speed of each of the wheels is compared to detect decreases in air pressure. Normally, the rotation speed of the 4 wheels is nearly the same, however, if a decrease in air pressure occurs in one tire, the dynamic loaded radius of the tire becomes smaller, the rotation speed of that tire increases, and a difference in rotation speed occurs. This method of detection is dynamic loaded radius detection. With the dynamic loaded radius detection method, if the tire pressure of all 4 tires decreases at the same level, a difference in tire rotation speed for each wheel does not occur and, therefore, detection is not possible.</p> </li> 
+<li> <p>Torsion resonant frequency detection </p> <p>With torsion resonant frequency detection, detection of differences in tire air pressure is possible even if the tire pressure of all 4 tires decreases at the same level. This detection method uses the ABS wheel speed sensor signal the same as the dynamic loaded radius detection method. With resonant frequency detection, the signal from the ABS wheel speed sensor is analyzed in single pulse units and various wave frequencies are detected. Among these wave frequencies, the wave frequency synchronized to the air pressure is the torsion resonant frequency. Therefore, by monitoring the torsion resonant frequency, decreases in air pressure can be detected indirectly.</p> </li> 
+</ul>
+</blockquote>  
+<a name="id02120020100005"></a> 
+<h4>Function</h4> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The tire pressure monitoring system consists of the following parts.</p> </li> 
+</ul>
+</blockquote> 
+<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="@colsep" bordercolor="#CCCCCC" frame="box" rules="all">
+<tbody valign="" align="" cellspacing="1" rowspan="">    
+<th valign="" align="" cellspacing="" rowspan=""> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="center" cellspacing="" rowspan="" colspan="2"> <p>Part name</p> </td> <td valign="middle" align="center" cellspacing="" rowspan="" colspan="NaN"> <p>Function</p> </td> 
+</tr> 
+</th>  
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>DSC HU/CM</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Calculates the change in tire pressure based on the signals from each sensor and monitors the change in status.</p> </li> 
+<li> <p>When it is determined that a tire pressure decreases below the specified value based on the initialization, the tire pressure monitoring system warning light is illuminated.</p> </li> 
+<li> <p>The tire pressure monitoring system warning light illumination signal is sent to the instrument cluster via a CAN signal.</p> </li> 
+<li> <p>If a malfunction occurs in the tire pressure monitoring system, determination is made to flash the tire pressure monitoring system warning light.</p> </li> 
+<li> <p>The tire pressure monitoring system warning light flash signal is sent to the instrument cluster via a CAN signal.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>ABS wheel-speed sensor</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The wheel speed is sent to the DSC HU/CM.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Ambient temperature sensor</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The ambient temperature is sent to the PCM.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>PCM</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The ambient temperature is sent to the DSC HU/CM via a CAN signal.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="2" colspan="NaN"> <p>Instrument cluster</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Tire pressure monitoring system warning light</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The tire pressure monitoring system warning light illuminates by the illumination signal from the DSC HU/CM.</p> </li> 
+<li> <p>The tire pressure monitoring system warning light flashes for approx. 1 min by the flash signal from the DSC HU/CM, and then it illuminates.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> <p>Tire pressure monitoring system warning alarm</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The tire pressure monitoring system warning alarm sound is triggered by the warning alarm request signal from the DSC HU/CM.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Instrument cluster</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The initialization signal is sent to the DSC HU/CM via a CAN signal.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr> 
+<tr valign="" align="" cellspacing="" rowspan=""> 
+<td valign="middle" align="left" cellspacing="" rowspan="" colspan="2"> <p>Tire pressure monitoring system set switch</p> </td> <td valign="middle" align="left" cellspacing="" rowspan="" colspan="NaN"> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The initialization signal is sent to the instrument cluster.</p> </li> 
+</ul>
+</blockquote> 
+</td> 
+</tr>  
+</tbody>
+</table>
+<br>  
+<a name="id02120020100006"></a> 
+<h4>Operation</h4> 
+<a name="id02120020100007"></a> 
+<h5>The tire pressure monitoring system operates as shown in the following figure.</h5>  
+<p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/ac5wzn00001072.tif"><img align="absmiddle" border="0" src="../../../img.dir/ac5wzn00001072.gif"></a>
+</p>   
+<a name="id02120020100008"></a> 
+<h5>Mis-use prevention logic</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>The tire pressure monitoring system has a mis-use prevention logic which illuminates the tire pressure monitoring system warning light if the tire pressure monitoring system initialization is performed two times without adjusting the tire pressures even though the tire pressure monitoring system warning light was illuminated.</p> <p>The data at the point in time that the tire pressure monitoring system warning light was illuminated is compared with the data at the point in time that the tire pressure monitoring system was initialized, and if the difference is within the specified value, the mis-use prevention logic detects and counts the number of detections.</p> <p>If the detection is the first time, the tire pressure monitoring system warning light is not illuminated.</p> <p>If the detection is the second time, the tire pressure monitoring system warning light is illuminated.</p> </li> 
+<li> <p>If the M-MDS is used to initialize the tire pressure monitoring system, the mis-use prevention logic is disabled.</p> </li> 
+<li> <p>The mis-use prevention logic operates as shown in the following figure.</p>  <p align="center">
+<a href="http://am.mazdaserviceinfo.com/emazda/dealersystem/service/esi/en_us/SH/2014/Mazda6/n6/img.dir/ac5wzn00002640.tif"><img align="absmiddle" border="0" src="../../../img.dir/ac5wzn00002640.gif"></a>
+</p>  
+</li> 
+</ul>
+</blockquote>  
+<a name="id02120020100009"></a> 
+<h5>Tire pressure monitoring system warning light does not illuminate</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>Even if the tire pressure monitoring system is normal, if the following items apply, the tire pressure monitoring system warning light may not illuminate.</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Brake pedal is depressed</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="square"> 
+<li> <p>DSC is operating</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Sudden steering wheel maneuvering</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Sudden acceleration/deceleration</p> </li> 
+<li> <p>When vehicle is parked, stopped</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote>  
+<a name="id02120020100010"></a> 
+<h5>Tire pressure monitoring system does not operate normally</h5> 
+<blockquote>
+<ul type="disc"> 
+<li> <p>If the following items apply, the tire pressure monitoring system may not operate correctly.</p> </li> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Initialized using tire pressure outside of tire pressure specification</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="square"> 
+<li> <p>Tire pressure suddenly decreases (Ex. tire burst)</p> </li> 
+</ul>
+</blockquote> 
+<blockquote>
+<ul type="square"> 
+<li> <p>During tire pressure monitoring system learning</p> </li> 
+</ul>
+</blockquote> 
+</ul>
+</blockquote>   
+<br>
+<br>
+				<a href="id021200629800.html">< Previous</a>
+			&nbsp;
+				<a href="id021200202000.html">Next ></a>
+			<br>
+<div align="right">
+<a href="#">Back to Top</a>
+<br>
+</div>
+<div align="center">
+<em>&copy; 2012 Mazda North American Operations, U.S.A.</em>
+</div>
+</body>
+</html>
